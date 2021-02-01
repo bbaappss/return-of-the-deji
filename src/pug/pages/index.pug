@@ -1,6 +1,8 @@
 extends ../template.pug
 
 block content
+  .loading.fade-out(data-aos)
+    img(src="/images/Logomark - White.svg")
   .fries.menu-hide
     .flex.flex-col.justify-center.items-center.h-full
       include ../modules/menu.pug
@@ -24,11 +26,11 @@ block content
         include ../modules/menu.pug
   .homepage-hero
     .flex.items-center.slider-static
-      img(src="/images/arrow-left.svg")
-      img(src="/images/phone-breakout 1.png")
-      img(src="/images/arrow-right.svg")      
-    img(src="/images/Frame 14.png" class="cta")
-    .copy.mt3
+      img(src="/images/arrow-left.svg" data-aos="fade-right")
+      img(src="/images/phone-breakout 1.png" data-aos="zoom-out")
+      img(src="/images/arrow-right.svg" data-aos="fade-left")      
+    img(src="/images/Frame 14.png" class="cta" data-aos="zoom-out-up")
+    .copy.mt3(data-aos="fade-up")
       h1.f26.bold Reinventing ad placement, one medium at a time
       p.mt3 Since pioneering Native advertising in 2012, we have built 4 product lines across 13 different formats, each with elements of customization not found anywhere else in the industry.
   .frames-from-figma

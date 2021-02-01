@@ -604,6 +604,12 @@ var Lantern = (function() {
 
 })();
 
+AOS.init({
+  duration: 600,
+  easing: 'ease-out',
+  delay: 1000
+});
+
 $(window).on("load", function () {
 
   $(".js-hamburger").click(function() {
@@ -614,6 +620,9 @@ $(window).on("load", function () {
   })
 
   //end of parallax effects
+
+  window.setTimeout(function(){$(".loading").addClass("not-loading");}, 1000);
+
 });
 
 

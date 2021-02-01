@@ -25,8 +25,8 @@ html:not([data-scroll="0"]) {
   justify-content: space-between;
   height: 74px;
   padding: 12px;
-  position: fixed;
   transition: 0.6s ease-in;
+  position: fixed;
   width: 100%;
   z-index: 200;
 
@@ -124,10 +124,6 @@ body.menu-open {
   }
 }
 
-.hamburger {
-  display: flex;
-}
-
 .hamburger-box {
   width: 32px;
 }
@@ -137,6 +133,7 @@ body.menu-open {
 .burger-and-fries-container .hamburger-inner::after {
   height: 2px;
 }
+
 .hamburger-inner,
 .hamburger-inner::before,
 .hamburger-inner::after {

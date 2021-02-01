@@ -1,0 +1,21 @@
+.homepage-hero {
+  background: black;
+  color: white;
+  padding-top: 100px;
+
+  .cta {
+    display: block;
+    margin: 24px auto 0;
+    width: 203px;
+  }
+
+  .slider-static {
+    justify-content: space-between;
+    padding: 0 8px;
+    width: 100%;
+  }
+
+  .copy {
+    padding: 24px;
+  }
+}

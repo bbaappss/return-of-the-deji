@@ -8,8 +8,9 @@ html:not([data-scroll="0"]) {
 
 .burger-and-fries-container {
   display: flex;
+  align-items: center;
   justify-content: space-between;
-  height: 60px;
+  height: 74px;
   padding: 12px;
   position: fixed;
   transition: 0.6s ease-in;

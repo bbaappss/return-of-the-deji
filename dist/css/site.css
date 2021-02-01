@@ -965,36 +965,17 @@ table {
   text-decoration: none; }
 
 body {
-  font-family: 'Lora', sans-serif;
+  font-family: "Avenir", sans-serif;
   font-weight: 300; }
 
 p {
   line-height: 1.5; }
 
-h1 {
-  letter-spacing: 2px; }
-
-h1, h2, h3, .serif {
-  font-family: 'Domine', serif; }
-
-h1, h2, h3 {
-  font-weight: 400; }
-
-.sans-serif {
-  font-family: 'Lora', sans-serif; }
-
 .bold {
   font-weight: 800; }
 
-@media (min-width: 1280px) {
-  h1 {
-    font-size: 5vw; }
-  h2 {
-    font-size: 4vw; }
-  p {
-    font-size: 2vw; }
-  a.big {
-    font-size: 2vw; } }
+.f26 {
+  font-size: 26px; }
 
 .not-home .burger-and-fries-container,
 html:not([data-scroll="0"]) .burger-and-fries-container {
@@ -1003,8 +984,9 @@ html:not([data-scroll="0"]) .burger-and-fries-container {
 
 .burger-and-fries-container {
   display: flex;
+  align-items: center;
   justify-content: space-between;
-  height: 60px;
+  height: 74px;
   padding: 12px;
   position: fixed;
   transition: 0.6s ease-in;
@@ -1094,9 +1076,20 @@ body.menu-open {
   .menu-on-large {
     display: none; } }
 
-.carousel {
+.homepage-hero {
   background: black;
-  color: white; }
+  color: white;
+  padding-top: 100px; }
+  .homepage-hero .cta {
+    display: block;
+    margin: 24px auto 0;
+    width: 203px; }
+  .homepage-hero .slider-static {
+    justify-content: space-between;
+    padding: 0 8px;
+    width: 100%; }
+  .homepage-hero .copy {
+    padding: 24px; }
 
 .frames-from-figma {
   display: flex;

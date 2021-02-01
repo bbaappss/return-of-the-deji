@@ -1,128 +1,36 @@
 extends ../template.pug
 
 block content
-  .section.homepage-hero.min-80vh
-    img(
-      class="bg-image-1"
-      src="images/geco-stare.jpg"
-    )
-    .overlay.absolute.top-0.left-0
-    .content(data-aos="fade")
-      img(
-        class="logo"
-        src="images/divinitree-logo.png"
-      )
-      h1 Discover
-      img(
-        class="wordmark"
-        src="images/divinitree-wordmark.png"
-      )
-      h2 and find your community
-  .divinitree-is
-    .content 
-      h1 
-        != 'An <span class="orange-1">inclusive</span> and <span class="orange-1">lighthearted</span> community'
-      p A place to grow, connect, and play
-    .relative
-      .overlay
-      img(
-        style="width: 100%;"
-        src="images/hug.jpg"
-      )
-  .section.new-to-yoga
-    .section
-      h1 New to yoga or Divinitree? 
-      h2.sans-serif  
-        != '<span class="orange-1">Ease into it</span> and explore a month of classes for $48'  
-  .relative.first30
-    a(
-      class="absolute w-100 h-100 z-3 click48mindbodylink"
-      href="javascript:void(0);"
-    )
-    .overlay
-    img(
-      src="images/sierra-pointing.jpg"
-      class="bg-image z-0"
-    )
-    .content.relative.z-1
-      .text
-        span.serif $48 
-        span.bold for your first 
-        span.serif 30 
-        span.bold days*
-      .fine-print
-        a(
-          class="button first-30"
-          href="javascript:void(0);"
+  .fries.menu-hide
+    .flex.flex-col.justify-center.items-center.h-full
+      include ../modules/menu.pug
+  #navigation.burger-and-fries-container
+      a(href="/" class="logo-in-navigation")
+        img(
+          class="logo-in-navigation-img" 
+          src="/images/triplelift-logo.svg"
         )
-          != 'START TODAY!'
-        span.returning-student * for new students or students returning after 1 year 
-  .schedule
-    .content 
-      h1 Classes that fit <span class="orange-1">you</span>
-      p Whether you're seeking to find stillness, break a sweat, or play upside down, you'll find what you need here!
-      p Explore Flow, Acro Yoga, SUP Yoga, Restore, Yin and Aromatherapy, and more. 
-      a(
-        class="big"
-        href="https://www.divinitreesantabarbara.com/schedule"
-        target="_blank"
-      ) 
-        != 'DISCOVER YOUR NEXT CLASS'
-  .more-than-yoga
-    h1 This is way more than “just yoga”
-    p This is yoga without the full-length mirror. 
-    p Yes, yoga is an amazing physical practice. But at Divinitree, we practice yoga to turn our attention inward and connect with the fullest versions of ourselves. 
-    img(
-      class="helping-hand"
-      src="images/helping-hand.png"
-    )
-  .community-class
-    .container
-      img(
-        src="images/teachers.jpg"
-      )
-    .text
-      h1 
-       != 'Come <span class="orange-1">as you are</span>'
-  .section
-    p Drop any judgement you have of yourself or what you believe yoga "should" be.
-    p Can't touch your toes? Never done yoga before? Looking for a meaningful practice that's still playful? 
-    p You're in the right place.
-    h1.line-height-1
-      !="Discover Divinitree. <br/> Discover Yourself."
-    p Find your practice here and step into your own personal power.
-    a.button(href="javascript:void();" class="click48mindbodylink") START YOUR 1ST MONTH NOW!
-  .
-    <script src="https://widgets.healcode.com/javascripts/healcode.js" type="text/javascript"></script>
-    <healcode-widget id="healCode48container" data-version="0.2" data-link-class="healcode-pricing-option-text-link hide" data-site-id="3265" data-mb-site-id="35605" data-type="pricing-link" data-inner-html="Buy Now" data-service-id="13661" />
-  .
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-153027355-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'UA-153027355-1');
-    </script>
-  .
-    <!-- Facebook Pixel Code -->
-    <script>
-    !function(f,b,e,v,n,t,s)
-    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-    n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src=v;s=b.getElementsByTagName(e)[0];
-    s.parentNode.insertBefore(t,s)}(window,document,'script',
-    'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '2455682534651670'); 
-    fbq('track', 'PageView');
-    </script>
-  .
-    <noscript>
-    <img height="1" width="1" 
-    src="https://www.facebook.com/tr?id=2455682534651670&ev=PageView
-    &noscript=1"/>
-    </noscript>
-    <!-- End Facebook Pixel Code -->
+      .burger-and-fries
+        <button class="hamburger hamburger--collapse js-hamburger" type="button">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button> 
+      .menu-on-large
+        include ../modules/menu.pug
+  .carousel
+    span Logo
+    span burger
+    p image
+    p watch show reel
+    p arrow one
+    p arrow two
+    p Reinventing ad placement, one medium at a time
+    p Since pioneering Native advertising in 2012, we have built 4 product lines across 13 different formats, each with elements of customization not found anywhere else in the industry.
+  .frames-from-figma
+    img(src="/images/Frame 38.png")
+    img(src="/images/Frame 9.png")
+    img(src="/images/Frame 39.png")
+    img(src="/images/Frame 13.png")
+    
     

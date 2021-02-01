@@ -1,0 +1,129 @@
+.not-home,
+html:not([data-scroll="0"]) {
+  .burger-and-fries-container {
+    background: rgba(255, 255, 255, 0.95);
+    background: black;
+  }
+}
+
+.burger-and-fries-container {
+  display: flex;
+  justify-content: space-between;
+  height: 60px;
+  padding: 12px;
+  position: fixed;
+  transition: 0.6s ease-in;
+  width: 100%;
+  z-index: 200;
+
+  .hamburger-inner,
+  .hamburger-inner::before,
+  .hamburger-inner::after {
+    height: 3px;
+  }
+
+  .burger-and-fries {
+    display: flex;
+    align-items: center;
+  }
+
+  .rsvp {
+    border: 1px solid black;
+    color: black;
+    padding: 4px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+
+    span {
+      display: block;
+      padding-top: 6px;
+    }
+  }
+
+  .burger {
+    display: block;
+    position: relative;
+    width: 28px;
+    line-height: 0;
+    margin-left: 12px;
+    z-index: 101;
+
+    span:nth-child(2) {
+      transform: translateX(100vw);
+    }
+
+    &.active {
+      span:nth-child(1) {
+        transform: translateX(100vw);
+      }
+      span:nth-child(2) {
+        transform: translateX(0);
+      }
+    }
+  }
+}
+
+body.modal-open {
+  overflow-y: hidden;
+}
+
+html:not([data-scroll="0"]) .not-home body.menu-open,
+html:not([data-scroll="0"]) body.menu-open,
+body.menu-open {
+  overflow-y: hidden;
+}
+
+.menu-hide {
+  background: white;
+  height: 100vh;
+  opacity: 0;
+  right: -100%;
+  position: fixed;
+  top: 0px;
+  z-index: 50;
+  width: 100%;
+  transition: 0.3s ease-in;
+}
+
+.menu-hide.show {
+  opacity: 1;
+  right: 0;
+}
+
+.fries {
+  a {
+    color: #fff;
+    font-size: 36px;
+    padding: 12px 0;
+    text-decoration: none;
+  }
+}
+
+.hamburger {
+  display: flex;
+}
+
+.hamburger-box {
+  width: 32px;
+}
+.burger-and-fries-container .hamburger-inner,
+.burger-and-fries-container .hamburger-inner::before,
+.burger-and-fries-container .hamburger-inner::after {
+  height: 2px;
+}
+.hamburger-inner,
+.hamburger-inner::before,
+.hamburger-inner::after {
+  width: 32px;
+  background-color: #fff;
+  position: absolute;
+  transition-property: transform;
+  transition-duration: 0.15s;
+  transition-timing-function: ease;
+}
+
+@media (max-width: 1280px) {
+  .menu-on-large {
+    display: none;
+  }
+}

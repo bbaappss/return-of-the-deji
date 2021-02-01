@@ -604,12 +604,14 @@ var Lantern = (function() {
 
 })();
 
-AOS.init();
+$(window).on("load", function () {
 
-var x, i;
-x = document.querySelectorAll(".click48mindbodylink");
-for (i = 0; i < x.length; i++) {
-  x[i].addEventListener('click', function () {
-    document.querySelector("#healCode48container a").click();
-  });
-}
+  $(".js-hamburger").click(function() {
+    $(this).toggleClass("is-active");
+    $(".fries").toggleClass("show");
+    $("body").toggleClass("modal-open");
+    $("body").toggleClass("menu-open");
+  })
+
+  //end of parallax effects
+});

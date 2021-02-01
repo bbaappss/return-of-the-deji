@@ -946,12 +946,6 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-.orange-1 {
-  color: #d88c30; }
-
-.red-1 {
-  color: #d83030; }
-
 .button {
   background: white;
   box-shadow: -2px 2px 2px #000;
@@ -979,8 +973,20 @@ p {
 
 .not-home .burger-and-fries-container,
 html:not([data-scroll="0"]) .burger-and-fries-container {
-  background: rgba(255, 255, 255, 0.95);
-  background: black; }
+  background: white; }
+  .not-home .burger-and-fries-container .logo-in-navigation .white-logo,
+  html:not([data-scroll="0"]) .burger-and-fries-container .logo-in-navigation .white-logo {
+    opacity: 0; }
+  .not-home .burger-and-fries-container .logo-in-navigation .orange-logo,
+  html:not([data-scroll="0"]) .burger-and-fries-container .logo-in-navigation .orange-logo {
+    opacity: 1; }
+  .not-home .burger-and-fries-container .hamburger-inner,
+  .not-home .burger-and-fries-container .hamburger-inner::before,
+  .not-home .burger-and-fries-container .hamburger-inner::after,
+  html:not([data-scroll="0"]) .burger-and-fries-container .hamburger-inner,
+  html:not([data-scroll="0"]) .burger-and-fries-container .hamburger-inner::before,
+  html:not([data-scroll="0"]) .burger-and-fries-container .hamburger-inner::after {
+    background-color: #f15c2c; }
 
 .burger-and-fries-container {
   display: flex;
@@ -992,6 +998,13 @@ html:not([data-scroll="0"]) .burger-and-fries-container {
   transition: 0.6s ease-in;
   width: 100%;
   z-index: 200; }
+  .burger-and-fries-container .logo-in-navigation * {
+    transition: 0.6s ease-out; }
+  .burger-and-fries-container .logo-in-navigation .orange-logo {
+    position: absolute;
+    opacity: 0;
+    z-index: 1;
+    left: 0; }
   .burger-and-fries-container .hamburger-inner,
   .burger-and-fries-container .hamburger-inner::before,
   .burger-and-fries-container .hamburger-inner::after {
@@ -1069,7 +1082,7 @@ body.menu-open {
   background-color: #fff;
   position: absolute;
   transition-property: transform;
-  transition-duration: 0.15s;
+  transition-duration: 0.6s;
   transition-timing-function: ease; }
 
 @media (max-width: 1280px) {
@@ -1078,6 +1091,7 @@ body.menu-open {
 
 .homepage-hero {
   background: black;
+  background: linear-gradient(77.24deg, #f47b20 14.56%, #f15c2c 88.29%);
   color: white;
   padding-top: 100px; }
   .homepage-hero .cta {

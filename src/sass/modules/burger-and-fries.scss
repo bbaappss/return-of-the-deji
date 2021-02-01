@@ -1,8 +1,21 @@
 .not-home,
 html:not([data-scroll="0"]) {
   .burger-and-fries-container {
-    background: rgba(255, 255, 255, 0.95);
-    background: black;
+    background: white;
+
+    .logo-in-navigation .white-logo {
+      opacity: 0;
+    }
+
+    .logo-in-navigation .orange-logo {
+      opacity: 1;
+    }
+
+    .hamburger-inner,
+    .hamburger-inner::before,
+    .hamburger-inner::after {
+      background-color: $amplifiedOrange;
+    }
   }
 }
 
@@ -16,6 +29,17 @@ html:not([data-scroll="0"]) {
   transition: 0.6s ease-in;
   width: 100%;
   z-index: 200;
+
+  .logo-in-navigation * {
+    transition: 0.6s ease-out;
+  }
+
+  .logo-in-navigation .orange-logo {
+    position: absolute;
+    opacity: 0;
+    z-index: 1;
+    left: 0;
+  }
 
   .hamburger-inner,
   .hamburger-inner::before,
@@ -107,6 +131,7 @@ body.menu-open {
 .hamburger-box {
   width: 32px;
 }
+
 .burger-and-fries-container .hamburger-inner,
 .burger-and-fries-container .hamburger-inner::before,
 .burger-and-fries-container .hamburger-inner::after {
@@ -119,7 +144,7 @@ body.menu-open {
   background-color: #fff;
   position: absolute;
   transition-property: transform;
-  transition-duration: 0.15s;
+  transition-duration: 0.6s;
   transition-timing-function: ease;
 }
 

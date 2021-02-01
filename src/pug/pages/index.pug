@@ -5,10 +5,14 @@ block content
     .flex.flex-col.justify-center.items-center.h-full
       include ../modules/menu.pug
   #navigation.burger-and-fries-container
-      a(href="/" class="logo-in-navigation")
+      a(href="/" class="logo-in-navigation relative")
         img(
-          class="logo-in-navigation-img" 
+          class="logo-in-navigation-img white-logo" 
           src="/images/triplelift-logo.svg"
+        )
+        img(
+          class="orange-logo" 
+          src="/images/logo-orange.svg"
         )
       .burger-and-fries
         <button class="hamburger hamburger--collapse js-hamburger" type="button">

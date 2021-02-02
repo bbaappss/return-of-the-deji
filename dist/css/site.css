@@ -1119,7 +1119,7 @@ body.menu-open {
   align-items: center; }
   .loading img {
     display: block;
-    margin: 0 auto;
+    margin: -20vw auto 0;
     width: 100px; }
   .loading.not-loading {
     z-index: -100; }

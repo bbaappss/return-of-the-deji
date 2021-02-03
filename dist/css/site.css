@@ -1090,7 +1090,8 @@ body.menu-open {
   background: black;
   background: linear-gradient(77.24deg, #f47b20 14.56%, #f15c2c 88.29%);
   color: white;
-  padding-top: 100px; }
+  padding-top: 100px;
+  min-height: 100vh; }
   .homepage-hero .cta {
     display: block;
     margin: 24px auto 0;
@@ -1102,31 +1103,10 @@ body.menu-open {
   .homepage-hero .copy {
     padding: 24px; }
 
-.phone-breakout {
-  position: relative;
-  height: 40vh;
-  width: 100%; }
-  .phone-breakout img {
-    top: 0;
-    width: 80%;
-    position: absolute;
-    left: 55%;
-    /* position the left edge of the element at the middle of the parent */
-    top: 50%;
-    transform: translate(-50%, -50%);
-    /* This is a shorthand of
-                                         translateX(-50%) and translateY(-50%) */ }
-
-.frames-from-figma {
-  display: flex;
-  flex-direction: column; }
-  .frames-from-figma > * {
-    margin-top: -0.5px; }
-
 .loading {
+  background: linear-gradient(77.24deg, #f47b20 14.56%, #f15c2c 88.29%);
   width: 100vw;
   height: 100vh;
-  background: linear-gradient(122.97deg, #0e3d52 0%, #000000 95.81%);
   position: absolute;
   top: 0;
   z-index: 300;
@@ -1138,6 +1118,24 @@ body.menu-open {
     width: 100px; }
   .loading.not-loading {
     z-index: -100; }
+
+.phone-breakout {
+  position: relative;
+  height: 40vh;
+  width: 100%; }
+  .phone-breakout img {
+    top: 0;
+    width: 80%;
+    position: absolute;
+    left: 55%;
+    top: 50%;
+    transform: translate(-50%, -50%); }
+
+.frames-from-figma {
+  display: flex;
+  flex-direction: column; }
+  .frames-from-figma > * {
+    margin-top: -0.5px; }
 
 .fade-out.aos-animate {
   opacity: 0; }

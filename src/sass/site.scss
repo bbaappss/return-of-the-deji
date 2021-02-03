@@ -13,27 +13,6 @@
   }
 }
 
-.loading {
-  width: 100vw;
-  height: 100vh;
-  background: linear-gradient(122.97deg, #0e3d52 0%, #000000 95.81%);
-  position: absolute;
-  top: 0;
-  z-index: 300;
-  display: flex;
-  align-items: center;
-
-  img {
-    display: block;
-    margin: -20vw auto 0;
-    width: 100px;
-  }
-
-  &.not-loading {
-    z-index: -100;
-  }
-}
-
 .fade-out.aos-animate {
   opacity: 0;
 }

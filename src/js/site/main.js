@@ -1,10 +1,6 @@
-AOS.init({
-  duration: 600,
-  easing: 'ease-out',
-  delay: 1000
-});
-
 $(window).on("load", function () {
+
+  // set up hamburger stuff
 
   $(".js-hamburger").click(function() {
     $(this).toggleClass("is-active");
@@ -12,10 +8,6 @@ $(window).on("load", function () {
     $("body").toggleClass("modal-open");
     $("body").toggleClass("menu-open");
   })
-
-  //end of parallax effects
-
-  window.setTimeout(function(){$(".loading").addClass("not-loading");}, 1000);
 
 });
 

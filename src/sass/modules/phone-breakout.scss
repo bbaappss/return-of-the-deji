@@ -7,12 +7,8 @@
     top: 0;
     width: 80%;
     position: absolute;
-    left: 55%; /* position the left edge of the element at the middle of the parent */
+    left: 55%;
     top: 50%;
-    transform: translate(
-      -50%,
-      -50%
-    ); /* This is a shorthand of
-                                         translateX(-50%) and translateY(-50%) */
+    transform: translate(-50%, -50%);
   }
 }

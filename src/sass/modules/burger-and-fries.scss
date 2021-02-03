@@ -19,6 +19,14 @@ html:not([data-scroll="0"]) {
   }
 }
 
+.sticky-header {
+  position: -webkit-sticky;
+  position: -moz-sticky;
+  position: -o-sticky;
+  position: -ms-sticky;
+  position: sticky;
+}
+
 .burger-and-fries-container {
   display: flex;
   align-items: center;
@@ -26,9 +34,9 @@ html:not([data-scroll="0"]) {
   height: 74px;
   padding: 12px;
   transition: 0.6s ease-in;
-  position: fixed;
   width: 100%;
   z-index: 200;
+  position: fixed;
 
   .logo-in-navigation * {
     transition: 0.6s ease-out;

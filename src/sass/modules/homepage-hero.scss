@@ -2,7 +2,7 @@
   background: black;
   background: linear-gradient(77.24deg, #f47b20 14.56%, #f15c2c 88.29%);
   color: white;
-  padding-top: 100px;
+  padding-top: 80px;
   min-height: 100vh;
 
   .cta {
@@ -22,8 +22,7 @@
   }
 
   .down-arrow {
-    position: absolute;
-    bottom: 24px;
-    left: 24px;
+    padding-bottom: 24px;
+    margin-left: 24px;
   }
 }

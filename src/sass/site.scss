@@ -5,14 +5,22 @@
 @import "layout/*";
 @import "modules/*";
 
+.fill-height {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  > * {
+    flex: 1;
+    > * {
+      align-items: center;
+    }
+  }
+}
+
 .frames-from-figma {
   display: flex;
   flex-direction: column;
   > * {
     margin-top: -0.5px;
   }
-}
-
-.fade-out.aos-animate {
-  opacity: 0;
 }

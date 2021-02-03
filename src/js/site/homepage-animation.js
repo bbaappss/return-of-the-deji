@@ -6,7 +6,7 @@ tl.from(".loading img", {
   opacity: 0,
   duration: .5,
   y: 50,
-  delay: 1
+  delay: .5
 })
 
 tl.to(".loading img", {
@@ -40,7 +40,7 @@ tl.from(".phone-breakout img", {
 tl.from(".slider-arrow.left", {
     opacity: 0,
     scale: 0,
-    duration: 1,
+    duration: .3,
     x: -50
   }, "sliders"
 )
@@ -48,7 +48,7 @@ tl.from(".slider-arrow.left", {
 tl.from(".slider-arrow.right", {
     opacity: 0,
     scale: 0,
-    duration: 1,
+    duration: .3,
     x: 50
   }, "sliders"
 )
@@ -72,3 +72,10 @@ tl.from(".homepage-hero .copy *", {
   duration: .5,
   stagger: .6
 }, "loadTheRest")
+
+tl.from(".down-arrow", {
+  opacity: 0,
+  y: -10,
+  duration: .5,
+}
+)

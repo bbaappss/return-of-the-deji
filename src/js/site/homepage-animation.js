@@ -40,7 +40,7 @@ tl.from(".phone-breakout img", {
 tl.from(".slider-arrow.left", {
     opacity: 0,
     scale: 0,
-    duration: .3,
+    duration: .6,
     x: -50
   }, "sliders"
 )

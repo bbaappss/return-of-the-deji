@@ -643,22 +643,6 @@ tl.from(".phone-breakout img", {
   }
 )
 
-tl.from(".slider-arrow.left", {
-    opacity: 0,
-    scale: 0,
-    duration: .6,
-    x: -50
-  }, "sliders"
-)
-
-tl.from(".slider-arrow.right", {
-    opacity: 0,
-    scale: 0,
-    duration: .3,
-    x: 50
-  }, "sliders"
-)
-
 tl.from(".cta", {
     opacity: 0,
     y: 10,
@@ -678,6 +662,22 @@ tl.from(".homepage-hero .copy *", {
   duration: .5,
   stagger: .6
 }, "loadTheRest")
+
+tl.from(".slider-arrow.left", {
+  opacity: 0,
+  scale: 0,
+  duration: .6,
+  x: -50
+}, "sliders"
+)
+
+tl.from(".slider-arrow.right", {
+  opacity: 0,
+  scale: 0,
+  duration: .3,
+  x: 50
+}, "sliders"
+)
 
 tl.from(".down-arrow", {
   opacity: 0,

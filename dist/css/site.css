@@ -1153,9 +1153,18 @@ body.menu-open {
   .burger-and-fries-container {
     padding: 0 12vw; } }
 
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%; }
+  50% {
+    background-position: 100% 50%; }
+  100% {
+    background-position: 0% 50%; } }
+
 .homepage-hero {
-  background: black;
   background: linear-gradient(77.24deg, #f47b20 14.56%, #f15c2c 88.29%);
+  background-size: 100% 100%;
+  animation: gradient 10s ease infinite;
   color: white;
   padding-top: 80px;
   min-height: 100vh; }

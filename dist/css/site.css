@@ -993,7 +993,8 @@ html:not([data-scroll="0"]) .burger-and-fries-container {
   position: -moz-sticky;
   position: -o-sticky;
   position: -ms-sticky;
-  position: sticky; }
+  position: sticky;
+  z-index: 200; }
 
 .burger-and-fries-container {
   display: flex;
@@ -1116,10 +1117,16 @@ body.menu-open {
     width: 203px; }
   .homepage-hero .slider-static {
     justify-content: space-between;
-    padding: 0 8px;
+    padding: 0 16px;
     width: 100%; }
   .homepage-hero .copy {
     padding: 24px; }
+    .homepage-hero .copy h1 {
+      font-size: 26px;
+      font-weight: 500;
+      line-height: 1.3; }
+    .homepage-hero .copy p {
+      font-size: 20px; }
   .homepage-hero .down-arrow {
     padding-bottom: 24px;
     margin-left: 24px; }
@@ -1142,6 +1149,7 @@ body.menu-open {
 
 .phone-breakout {
   position: relative;
+  margin-top: 4vh;
   height: 40vh;
   width: 100%; }
   .phone-breakout img {

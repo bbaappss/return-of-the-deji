@@ -13,12 +13,22 @@
 
   .slider-static {
     justify-content: space-between;
-    padding: 0 8px;
+    padding: 0 16px;
     width: 100%;
   }
 
   .copy {
     padding: 24px;
+
+    h1 {
+      font-size: 26px;
+      font-weight: 500;
+      line-height: 1.3;
+    }
+
+    p {
+      font-size: 20px;
+    }
   }
 
   .down-arrow {

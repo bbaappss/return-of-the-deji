@@ -25,6 +25,7 @@ html:not([data-scroll="0"]) {
   position: -o-sticky;
   position: -ms-sticky;
   position: sticky;
+  z-index: 200;
 }
 
 .burger-and-fries-container {

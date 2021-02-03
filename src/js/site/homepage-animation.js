@@ -68,7 +68,7 @@ tl.from(".slider-arrow.left", {
   opacity: 0,
   scale: 0,
   duration: .6,
-  x: -50
+  x: 50
 }, "sliders"
 )
 
@@ -76,7 +76,7 @@ tl.from(".slider-arrow.right", {
   opacity: 0,
   scale: 0,
   duration: .3,
-  x: 50
+  x: -50
 }, "sliders"
 )
 

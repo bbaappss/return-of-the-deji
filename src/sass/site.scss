@@ -5,6 +5,10 @@
 @import "layout/*";
 @import "modules/*";
 
+.does-not-work:hover {
+  cursor: pointer;
+}
+
 .fill-height {
   display: flex;
   flex-direction: column;

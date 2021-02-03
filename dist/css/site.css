@@ -1163,6 +1163,9 @@ body.menu-open {
     display: block;
     margin: 24px auto 0;
     width: 203px; }
+    @media (min-width: 1024px) {
+      .homepage-hero .cta {
+        margin-top: 48px; } }
   .homepage-hero .slider-static {
     justify-content: space-between;
     padding: 0 16px;
@@ -1184,7 +1187,11 @@ body.menu-open {
     transform: translate(-50%, -50%);
     top: 50%;
     left: 50%;
-    padding: 0 16px; }
+    padding: 0 16px;
+    z-index: 1; }
+    @media (min-width: 1024px) {
+      .homepage-hero .arrows {
+        padding: 0 4vw; } }
   .homepage-hero .down-arrow {
     padding-bottom: 24px;
     margin-left: 24px; }
@@ -1241,6 +1248,9 @@ body.menu-open {
     top: 50%;
     transform: translate(-50%, -50%);
     max-width: 330px; }
+
+.does-not-work:hover {
+  cursor: pointer; }
 
 .fill-height {
   display: flex;

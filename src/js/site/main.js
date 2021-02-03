@@ -9,6 +9,10 @@ $(window).on("load", function () {
     $("body").toggleClass("menu-open");
   })
 
+  $(".does-not-work").click(function(e) {
+    alert("This does not work yet");
+  })
+
 });
 
 

@@ -674,7 +674,7 @@ tl.from(".slider-arrow.left", {
   opacity: 0,
   scale: 0,
   duration: .6,
-  x: -50
+  x: 50
 }, "sliders"
 )
 
@@ -682,7 +682,7 @@ tl.from(".slider-arrow.right", {
   opacity: 0,
   scale: 0,
   duration: .3,
-  x: 50
+  x: -50
 }, "sliders"
 )
 
@@ -727,6 +727,10 @@ $(window).on("load", function () {
     $(".fries").toggleClass("show");
     $("body").toggleClass("modal-open");
     $("body").toggleClass("menu-open");
+  })
+
+  $(".does-not-work").click(function(e) {
+    alert("This does not work yet");
   })
 
 });

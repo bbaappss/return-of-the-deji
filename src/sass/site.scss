@@ -25,6 +25,24 @@
   display: flex;
   flex-direction: column;
   > * {
-    margin-top: -0.5px;
+    margin-top: -2px;
+  }
+}
+
+.frames-from-figma-desktop {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .frames-from-figma {
+    display: none;
+  }
+
+  .frames-from-figma-desktop {
+    display: flex;
+    flex-direction: column;
+    > * {
+      margin-top: -2px;
+    }
   }
 }

@@ -1015,6 +1015,9 @@ html:not([data-scroll="0"]) .burger-and-fries-container {
   width: 100%;
   z-index: 200;
   position: fixed; }
+  @media (min-width: 1024px) {
+    .burger-and-fries-container {
+      height: 78px; } }
   .burger-and-fries-container .logo-in-navigation * {
     transition: 0.6s ease-out; }
   .burger-and-fries-container .logo-in-navigation .orange-logo {
@@ -1274,4 +1277,16 @@ body.menu-open {
   display: flex;
   flex-direction: column; }
   .frames-from-figma > * {
-    margin-top: -0.5px; }
+    margin-top: -2px; }
+
+.frames-from-figma-desktop {
+  display: none; }
+
+@media (min-width: 1024px) {
+  .frames-from-figma {
+    display: none; }
+  .frames-from-figma-desktop {
+    display: flex;
+    flex-direction: column; }
+    .frames-from-figma-desktop > * {
+      margin-top: -2px; } }

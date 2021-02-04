@@ -1,22 +1,8 @@
-@keyframes gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
 .homepage-hero {
-  background: $primaryGradient;
-  background-size: 100% 400%;
-  animation: gradient 10s ease infinite;
   color: white;
   padding-top: 80px;
   min-height: 100vh;
+  z-index: 1;
 
   .cta {
     display: block;
@@ -54,7 +40,7 @@
     align-items: center;
     justify-content: space-between;
     transform: translate(-50%, -50%);
-    top: 50%;
+    top: 35%;
     left: 50%;
     padding: 0 16px;
     z-index: 1;
@@ -63,11 +49,6 @@
       padding: 0 4vw;
     }
   }
-
-  .down-arrow {
-    padding-bottom: 24px;
-    margin-left: 24px;
-  }
 }
 
 @media (min-width: 1024px) {
@@ -75,11 +56,6 @@
     display: flex;
     align-items: center;
     padding-top: 0;
-  }
-
-  .down-arrow {
-    position: absolute;
-    bottom: 0;
   }
 
   .slide-content-container {

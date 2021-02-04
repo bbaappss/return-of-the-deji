@@ -604,6 +604,27 @@ var Lantern = (function() {
 
 })();
 
+const gradientTL = gsap.timeline( {    
+  scrollTrigger: {
+    trigger: ".why-triplelift",
+    start: "40% bottom",
+    end: "60% bottom",
+    scrub: true,
+    markers: true,
+    toggleActions: "play reverse play reverse",
+  }
+});
+
+
+gradientTL
+  .to(
+    '.gradient-transition.gradient2', 
+    { 
+      opacity: 1, 
+      duration: 1 
+    }, 
+    0.5
+  );
 window.setTimeout(function(){$(".loading").addClass("not-loading");}, 3000);
 
 var tl = gsap.timeline({repeat: 0});
@@ -694,30 +715,82 @@ tl.from(".cta", {
 )
 
 tl.from(".down-arrow", {
-  opacity: 0,
-  y: -10,
-  duration: .5
-}
+    opacity: 0,
+    y: -10,
+    duration: .5
+  }
 )
 
 
-const downarrowTL = gsap.timeline( { 
-   
+const downarrowTL = gsap.timeline( {    
   scrollTrigger: {
     trigger: ".down-arrow",
-    start: "-=300 55%",
-    end: "100 70%",
+    start: "-=400% center",
+    end: "200% center",
     scrub: true,
     toggleActions: "play reverse play reverse",
   }
-  
 });
 
 downarrowTL
-  .to('.down-arrow', { opacity: 0, duration: 1 }, 0.5)
-;
+  .to(
+    '.down-arrow', 
+    { 
+      opacity: 0, 
+      duration: 2,
+      y: 100
+    }, 0.5)
+  ;
 
+const parallaxHomePageHero = gsap.timeline( {    
+    scrollTrigger: {
+      trigger: ".homepage-hero",
+      start: "100% center",
+      end: "+=100 center",
+      scrub: true,
+      toggleActions: "play reverse play reverse",
+    }
+  });
 
+parallaxHomePageHero
+  .to(
+    '.homepage-hero', 
+    { 
+      opacity: 0, 
+      duration: 1,
+      y: -20
+    })
+  ;
+
+parallaxHomePageHero
+  .from(
+    '.why-triplelift', 
+    { 
+      opacity: 0, 
+      duration: 1,
+      y: 20
+    })
+  ;
+
+const whyTripleLiftParallax = gsap.timeline( {    
+  scrollTrigger: {
+    trigger: ".why-triplelift",
+    start: "10% center",
+    end: "40% center",
+    scrub: true,
+    toggleActions: "play reverse play reverse",
+  }
+});
+
+whyTripleLiftParallax
+  .from(
+    '.why-triplelift-section', 
+    { 
+      opacity: 0, 
+      duration: 1,
+      x: -20,
+      stagger: .5
+    });
 $(window).on("load", function () {
 
   // set up hamburger stuff

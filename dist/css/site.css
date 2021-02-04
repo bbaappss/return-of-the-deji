@@ -1085,11 +1085,17 @@ body.menu-open {
   .menu-on-small > .main-nav {
     display: flex;
     flex-direction: column; }
+    .menu-on-small > .main-nav a {
+      width: 100%;
+      text-align: center;
+      padding: 24px 18px;
+      font-size: 24px; }
   .menu-on-small .login {
     width: fit-content;
-    margin-left: 24px;
-    margin-top: 44px;
-    display: inline-block; }
+    display: block;
+    margin: 24px auto 0;
+    font-size: 24px;
+    padding: 24px 64px; }
 
 .menu-on-large {
   display: flex;
@@ -1156,6 +1162,20 @@ body.menu-open {
   .burger-and-fries-container {
     padding: 0 12vw; } }
 
+.gradient-transition-container {
+  height: 100vh;
+  position: fixed;
+  width: 100%;
+  z-index: -1; }
+  .gradient-transition-container > * {
+    height: 100vh;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0; }
+
 @keyframes gradient {
   0% {
     background-position: 0% 50%; }
@@ -1164,13 +1184,20 @@ body.menu-open {
   100% {
     background-position: 0% 50%; } }
 
-.homepage-hero {
+.gradient-transition.gradient1 {
   background: linear-gradient(77.24deg, #f47b20 14.56%, #f15c2c 88.29%);
-  background-size: 100% 400%;
-  animation: gradient 10s ease infinite;
+  background-size: 100% 100%;
+  animation: gradient 10s ease infinite; }
+
+.gradient-transition.gradient2 {
+  background: linear-gradient(122.97deg, #0e3d52 0%, #000000 95.81%);
+  opacity: 0; }
+
+.homepage-hero {
   color: white;
   padding-top: 80px;
-  min-height: 100vh; }
+  min-height: 100vh;
+  z-index: 1; }
   .homepage-hero .cta {
     display: block;
     margin: 24px auto 0;
@@ -1197,25 +1224,19 @@ body.menu-open {
     align-items: center;
     justify-content: space-between;
     transform: translate(-50%, -50%);
-    top: 50%;
+    top: 35%;
     left: 50%;
     padding: 0 16px;
     z-index: 1; }
     @media (min-width: 1024px) {
       .homepage-hero .arrows {
         padding: 0 4vw; } }
-  .homepage-hero .down-arrow {
-    padding-bottom: 24px;
-    margin-left: 24px; }
 
 @media (min-width: 1024px) {
   .homepage-hero {
     display: flex;
     align-items: center;
     padding-top: 0; }
-  .down-arrow {
-    position: absolute;
-    bottom: 0; }
   .slide-content-container {
     display: flex;
     flex-direction: row-reverse;
@@ -1261,6 +1282,17 @@ body.menu-open {
     transform: translate(-50%, -50%);
     max-width: 330px; }
 
+.why-triplelift {
+  color: white;
+  padding: 10vw 24px 40vw; }
+  .why-triplelift h2 {
+    font-size: 11vw;
+    font-weight: 500;
+    text-align: center; }
+  .why-triplelift h3 {
+    font-size: 10vw;
+    text-align: center; }
+
 .does-not-work:hover {
   cursor: pointer; }
 
@@ -1290,3 +1322,9 @@ body.menu-open {
     flex-direction: column; }
     .frames-from-figma-desktop > * {
       margin-top: -2px; } }
+
+.down-arrow {
+  z-index: 0;
+  bottom: 0px;
+  padding-bottom: 24px;
+  margin-left: 24px; }

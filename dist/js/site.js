@@ -610,7 +610,6 @@ const gradientTL = gsap.timeline( {
     start: "40% bottom",
     end: "60% bottom",
     scrub: true,
-    markers: true,
     toggleActions: "play reverse play reverse",
   }
 });
@@ -622,8 +621,7 @@ gradientTL
     { 
       opacity: 1, 
       duration: 1 
-    }, 
-    0.5
+    }
   );
 window.setTimeout(function(){$(".loading").addClass("not-loading");}, 3000);
 

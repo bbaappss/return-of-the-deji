@@ -80,7 +80,7 @@ tl.from(".slider-arrow.right", {
 }, "sliders"
 )
 
-tl.from(".cta", {
+tl.from(".homepage-hero .cta", {
   opacity: 0,
   y: 10,
   duration: .5

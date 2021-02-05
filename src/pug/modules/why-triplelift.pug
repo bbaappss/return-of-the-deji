@@ -10,19 +10,20 @@ mixin why-triplelift-section(icon, title, body)
 
 .why-triplelift
   h2.text-primary-gradient Why TripleLift?
-  +why-triplelift-section(
-    "/images/Direct-Orange.svg", 
-    "Direct", 
-    "We build relationships directly with publishers to deliver brand safe environments and better performance."
-  )
-  +why-triplelift-section(
-    "/images/Diverse-Orange.svg", 
-    "Diverse", 
-    "We offer products across channels, formats, publishers and partners."
-  )
-  +why-triplelift-section(
-    "/images/Designed-Yellow.svg", 
-    "Designed", 
-    "We apply technologies to ensure that the delivery of your creative is worthy of your brand."
-  )
+  .why-triplelift-section-container
+    +why-triplelift-section(
+      "/images/Direct-Orange.svg", 
+      "Direct", 
+      "We build relationships directly with publishers to deliver brand safe environments and better performance."
+    )
+    +why-triplelift-section(
+      "/images/Diverse-Orange.svg", 
+      "Diverse", 
+      "We offer products across channels, formats, publishers and partners."
+    )
+    +why-triplelift-section(
+      "/images/Designed-Yellow.svg", 
+      "Designed", 
+      "We apply technologies to ensure that the delivery of your creative is worthy of your brand."
+    )
 

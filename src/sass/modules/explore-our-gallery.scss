@@ -31,3 +31,14 @@
     }
   }
 }
+
+@media (min-width: 1024px) {
+  .explore-our-gallery-container {
+    margin: 24vw 12vw 12vw;
+    a.explore-our-gallery {
+      .headline {
+        font-size: 4vw;
+      }
+    }
+  }
+}

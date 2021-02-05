@@ -1204,6 +1204,12 @@ body.menu-open {
         text-transform: uppercase;
         margin-right: 12px; }
 
+@media (min-width: 1024px) {
+  .explore-our-gallery-container {
+    margin: 24vw 12vw 12vw; }
+    .explore-our-gallery-container a.explore-our-gallery .headline {
+      font-size: 4vw; } }
+
 .gradient-transition-container {
   height: 100vh;
   position: fixed;
@@ -1266,7 +1272,8 @@ body.menu-open {
     z-index: 1; }
     @media (min-width: 1024px) {
       .homepage-hero .arrows {
-        padding: 0 4vw; } }
+        padding: 0 4vw;
+        top: 50%; } }
 
 @media (min-width: 1024px) {
   .homepage-hero {
@@ -1361,6 +1368,22 @@ body.menu-open {
     font-size: 10vw;
     text-align: center; }
 
+@media (min-width: 1024px) {
+  .why-triplelift {
+    margin: 0 auto;
+    max-width: 90vw; }
+    .why-triplelift h2 {
+      font-size: 6vw;
+      text-align: left; }
+    .why-triplelift h3 {
+      font-size: 3vw; }
+    .why-triplelift .why-triplelift-section-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      column-gap: 3vw; }
+      .why-triplelift .why-triplelift-section-container .why-triplelift-section {
+        margin-top: 0; } }
+
 .does-not-work:hover {
   cursor: pointer; }
 
@@ -1396,3 +1419,6 @@ body.menu-open {
   bottom: 0px;
   padding-bottom: 24px;
   margin-left: 24px; }
+  @media (min-width: 1024px) {
+    .down-arrow {
+      margin-left: 60px; } }

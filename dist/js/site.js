@@ -699,8 +699,8 @@ tl.from(".phone-breakout img", {
     opacity: 0, 
     y: 20,
     x: 20,
-    delay: .5,
-    duration: 1.5,
+    delay: .1,
+    duration: 1,
     stagger: -0.5
   }
 )
@@ -884,7 +884,6 @@ const weWorkWithParallax = gsap.timeline( {
   }
 });
 
-
 weWorkWithParallax.from(".we-work-with h3", {
   opacity: 0,
   y: 40,
@@ -893,13 +892,12 @@ weWorkWithParallax.from(".we-work-with h3", {
 
 weWorkWithParallax.to('.explore-our-gallery-container .animate-border-outer', {
   opacity: 0,
-  x: "-100%",
+  x: "100%",
   duration: .4,
   delay: .1,
 }, "weWorkWith")
 
 weWorkWithParallax.to(".explore-our-gallery-container", {
-  opacity: 0,
   y: -100,
   duration: .6,
 }, "weWorkWith")

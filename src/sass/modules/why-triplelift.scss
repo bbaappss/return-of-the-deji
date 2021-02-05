@@ -21,3 +21,29 @@
     text-align: center;
   }
 }
+
+@media (min-width: 1024px) {
+  .why-triplelift { 
+    margin: 0 auto;
+    max-width: 90vw;
+
+    h2 {
+      font-size: 6vw;
+      text-align: left;
+    }
+
+    h3 {
+      font-size: 3vw;
+    }
+
+    .why-triplelift-section-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      column-gap: 3vw;
+      
+      .why-triplelift-section {
+        margin-top: 0;
+      }
+    }
+  }
+}

@@ -629,7 +629,6 @@ const exploreGalleryGradientTL = gsap.timeline( {
     start: "-70% center",
     end: "60% center",
     scrub: true,
-    markers: true,
     toggleActions: "play reverse play reverse",
   }
 });
@@ -816,7 +815,6 @@ const exploreGalleryParallax = gsap.timeline( {
     start: "-60% center",
     end: "60% center",
     scrub: true,
-    markers: true,
     toggleActions: "play reverse play reverse",
   }
 });
@@ -838,13 +836,11 @@ exploreGalleryParallax
       opacity: 0, 
   }, "exploreGallery");
 
-
 exploreGalleryParallax
   .to(
     '.explore-our-gallery-container .animate-border-outer', 
-    { 
+    {
       opacity: 1,
-      scale: 1, 
       duration: 1,
   }, "exploreGallery");
 

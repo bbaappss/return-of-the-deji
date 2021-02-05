@@ -979,7 +979,6 @@ p {
   height: 100%;
   background: linear-gradient(77.24deg, #f47b20 14.56%, #f15c2c 88.29%);
   z-index: 2;
-  transform: scale(0.8);
   opacity: 0; }
 
 .animate-border-content {
@@ -1188,9 +1187,13 @@ body.menu-open {
     .explore-our-gallery-container a.explore-our-gallery > span {
       z-index: 1; }
     .explore-our-gallery-container a.explore-our-gallery .headline {
-      font-size: 9vw;
+      font-size: 32px;
       font-weight: 800;
-      line-height: 1.3; }
+      line-height: 1.3;
+      background: linear-gradient(142.86deg, #F47B20 2.47%, #F15C2C 43.9%, #ED79B0 95.24%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      -webkit-box-decoration-break: clone; }
     .explore-our-gallery-container a.explore-our-gallery .cta {
       align-self: flex-end;
       align-items: center;

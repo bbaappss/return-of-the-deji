@@ -23,7 +23,6 @@ const exploreGalleryGradientTL = gsap.timeline( {
     start: "-70% center",
     end: "60% center",
     scrub: true,
-    markers: true,
     toggleActions: "play reverse play reverse",
   }
 });

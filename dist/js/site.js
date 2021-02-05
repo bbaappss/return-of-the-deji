@@ -910,13 +910,6 @@ weWorkWithParallax.from(".we-work-with", {
   duration: .3,
 }, "weWorkWith")
 
-weWorkWithParallax.from(".we-work-with-section", {
-  opacity: 0,
-  y: 40,
-  duration: .3,
-  stagger: .5
-}, "weWorkWith")
-
 
 weWorkWithParallax.from(".we-work-with .logo-grid *", {
   opacity: 0,

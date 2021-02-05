@@ -642,6 +642,26 @@ exploreGalleryGradientTL
       duration: 1 
     }, "explore"
 );
+
+const weWorkWithGradientTL = gsap.timeline( {    
+  scrollTrigger: {
+    trigger: ".we-work-with",
+    start: "top center",
+    end: "60% center",
+    scrub: true,
+    toggleActions: "play reverse play reverse",
+  }
+});
+
+weWorkWithGradientTL
+  .to(
+    '.gradient-transition.white', 
+    { 
+      opacity: 0, 
+      duration: 0
+    }, "we-work-with"
+);
+
 window.setTimeout(function(){$(".loading").addClass("not-loading");}, 3000);
 
 var tl = gsap.timeline({repeat: 0});
@@ -813,7 +833,7 @@ const exploreGalleryParallax = gsap.timeline( {
   scrollTrigger: {
     trigger: ".explore-our-gallery-container",
     start: "-60% center",
-    end: "60% center",
+    end: "100% center",
     scrub: true,
     toggleActions: "play reverse play reverse",
   }
@@ -833,8 +853,10 @@ exploreGalleryParallax
   .from(
     '.explore-our-gallery-container', 
     { 
-      y: -20
+      y: 60,
+      duration: 2,
   }, "exploreGallery");
+
 
 exploreGalleryParallax
   .to(
@@ -843,6 +865,57 @@ exploreGalleryParallax
       opacity: 1,
       duration: 1,
   }, "exploreGallery");
+
+exploreGalleryParallax
+  .from(
+    '.explore-our-gallery-container .animate-border-outer', 
+    {
+      x: "-100%",
+      duration: 1,
+      delay: .2
+  }, "exploreGallery");
+
+const weWorkWithParallax = gsap.timeline( {    
+  scrollTrigger: {
+    trigger: ".we-work-with",
+    start: "-20% center",
+    end: "80% center",
+    scrub: true,
+    toggleActions: "play reverse play reverse",
+  }
+});
+
+weWorkWithParallax.to('.explore-our-gallery-container .animate-border-outer', {
+  opacity: 0,
+  x: "-100%",
+  duration: .2,
+}, "weWorkWith")
+
+weWorkWithParallax.to(".explore-our-gallery-container", {
+  opacity: 0,
+  y: -100,
+  duration: .6,
+}, "weWorkWith")
+
+
+weWorkWithParallax.from(".we-work-with", {
+  opacity: 0,
+  y: 40,
+  duration: .3,
+}, "weWorkWith")
+
+weWorkWithParallax.from(".we-work-with h3", {
+  opacity: 0,
+  y: 40,
+  duration: .3,
+}, "weWorkWith")
+
+weWorkWithParallax.from(".we-work-with .logo-grid *", {
+  opacity: 0,
+  y: 20,
+  duration: .08,
+  stagger: .04
+}, "weWorkWith")
 
 $(window).on("load", function () {
 

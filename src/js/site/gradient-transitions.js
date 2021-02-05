@@ -36,3 +36,22 @@ exploreGalleryGradientTL
       duration: 1 
     }, "explore"
 );
+
+const weWorkWithGradientTL = gsap.timeline( {    
+  scrollTrigger: {
+    trigger: ".we-work-with",
+    start: "top center",
+    end: "60% center",
+    scrub: true,
+    toggleActions: "play reverse play reverse",
+  }
+});
+
+weWorkWithGradientTL
+  .to(
+    '.gradient-transition.white', 
+    { 
+      opacity: 0, 
+      duration: 0
+    }, "we-work-with"
+);

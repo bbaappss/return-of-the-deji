@@ -971,6 +971,14 @@ p {
 .f26 {
   font-size: 26px; }
 
+.animate-border-outer {
+  padding: 12px;
+  background: linear-gradient(77.24deg, #f47b20 14.56%, #f15c2c 88.29%); }
+
+.animate-border-content {
+  background-color: white;
+  padding: 24px; }
+
 .not-home .burger-and-fries-container,
 html:not([data-scroll="0"]) .burger-and-fries-container {
   background: white; }
@@ -1162,55 +1170,27 @@ body.menu-open {
   .burger-and-fries-container {
     padding: 0 12vw; } }
 
-.explore-our-gallery-container a.explore-our-gallery {
-  background: white;
-  padding: 24vw 24px;
-  box-shadow: inset 0 0 0 12px red;
-  position: relative;
-  transition: color 0.25s;
-  display: flex;
-  flex-direction: column; }
-  .explore-our-gallery-container a.explore-our-gallery::before, .explore-our-gallery-container a.explore-our-gallery::after {
-    box-sizing: inherit;
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%; }
-  .explore-our-gallery-container a.explore-our-gallery::before, .explore-our-gallery-container a.explore-our-gallery::after {
-    border: 12px solid transparent;
-    width: 0;
-    height: 0; }
-  .explore-our-gallery-container a.explore-our-gallery::before {
-    top: 0;
-    left: 0; }
-  .explore-our-gallery-container a.explore-our-gallery::after {
-    bottom: 0;
-    right: 0; }
-  .explore-our-gallery-container a.explore-our-gallery:hover {
-    color: cyan; }
-  .explore-our-gallery-container a.explore-our-gallery:hover::before, .explore-our-gallery-container a.explore-our-gallery:hover::after {
-    width: 100%;
-    height: 100%; }
-  .explore-our-gallery-container a.explore-our-gallery:hover::before {
-    border-top-color: cyan;
-    border-right-color: cyan;
-    transition: width 0.25s ease-out, height 0.25s ease-out 0.25s; }
-  .explore-our-gallery-container a.explore-our-gallery:hover::after {
-    border-bottom-color: cyan;
-    border-left-color: cyan;
-    transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s, height 0.25s ease-out 0.75s; }
-  .explore-our-gallery-container a.explore-our-gallery .headline {
-    font-size: 10vw;
-    font-weight: 800;
-    line-height: 1.3; }
-  .explore-our-gallery-container a.explore-our-gallery .cta {
-    align-self: flex-end;
-    align-items: center;
-    margin-top: 36px; }
-    .explore-our-gallery-container a.explore-our-gallery .cta span {
-      font-weight: 600;
-      text-transform: uppercase;
-      margin-right: 12px; }
+.explore-our-gallery-container {
+  padding: 24vw 0;
+  position: relative; }
+  .explore-our-gallery-container a.explore-our-gallery {
+    display: flex;
+    flex-direction: column; }
+    .explore-our-gallery-container a.explore-our-gallery > span {
+      z-index: 1; }
+    .explore-our-gallery-container a.explore-our-gallery .headline {
+      font-size: 9vw;
+      font-weight: 800;
+      line-height: 1.3; }
+    .explore-our-gallery-container a.explore-our-gallery .cta {
+      align-self: flex-end;
+      align-items: center;
+      justify-content: flex-end;
+      margin-top: 36px; }
+      .explore-our-gallery-container a.explore-our-gallery .cta span {
+        font-weight: 600;
+        text-transform: uppercase;
+        margin-right: 12px; }
 
 .gradient-transition-container {
   height: 100vh;

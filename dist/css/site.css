@@ -1179,7 +1179,7 @@ body.menu-open {
     padding: 0 12vw; } }
 
 .explore-our-gallery-container {
-  margin: 24vw 0 48vw;
+  margin: 24vw 0 24vw;
   position: relative; }
   .explore-our-gallery-container a.explore-our-gallery {
     display: flex;

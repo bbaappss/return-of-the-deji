@@ -208,23 +208,30 @@ exploreGalleryParallax
     {
       x: "-100%",
       duration: 1,
-      delay: .2
   }, "exploreGallery");
 
 const weWorkWithParallax = gsap.timeline( {    
   scrollTrigger: {
     trigger: ".we-work-with",
-    start: "-20% center",
+    start: "-15% center",
     end: "80% center",
     scrub: true,
     toggleActions: "play reverse play reverse",
   }
 });
 
+
+weWorkWithParallax.from(".we-work-with h3", {
+  opacity: 0,
+  y: 40,
+  duration: .3,
+}, "weWorkWith")
+
 weWorkWithParallax.to('.explore-our-gallery-container .animate-border-outer', {
   opacity: 0,
   x: "-100%",
-  duration: .2,
+  duration: .4,
+  delay: .1,
 }, "weWorkWith")
 
 weWorkWithParallax.to(".explore-our-gallery-container", {
@@ -233,22 +240,23 @@ weWorkWithParallax.to(".explore-our-gallery-container", {
   duration: .6,
 }, "weWorkWith")
 
-
 weWorkWithParallax.from(".we-work-with", {
   opacity: 0,
   y: 40,
   duration: .3,
 }, "weWorkWith")
 
-weWorkWithParallax.from(".we-work-with h3", {
+weWorkWithParallax.from(".we-work-with-section", {
   opacity: 0,
   y: 40,
   duration: .3,
+  stagger: .5
 }, "weWorkWith")
+
 
 weWorkWithParallax.from(".we-work-with .logo-grid *", {
   opacity: 0,
   y: 20,
   duration: .08,
-  stagger: .04
+  stagger: .03
 }, "weWorkWith")

@@ -189,7 +189,7 @@ exploreGalleryParallax
   .from(
     '.explore-our-gallery-container', 
     { 
-      opacity: 0, 
+      y: -20
   }, "exploreGallery");
 
 exploreGalleryParallax

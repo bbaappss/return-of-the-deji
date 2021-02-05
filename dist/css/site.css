@@ -972,12 +972,21 @@ p {
   font-size: 26px; }
 
 .animate-border-outer {
-  padding: 12px;
-  background: linear-gradient(77.24deg, #f47b20 14.56%, #f15c2c 88.29%); }
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(77.24deg, #f47b20 14.56%, #f15c2c 88.29%);
+  z-index: 2;
+  transform: scale(0.8);
+  opacity: 0; }
 
 .animate-border-content {
   background-color: white;
-  padding: 24px; }
+  padding: 24px;
+  margin: 12px;
+  z-index: 3; }
 
 .not-home .burger-and-fries-container,
 html:not([data-scroll="0"]) .burger-and-fries-container {
@@ -1171,7 +1180,7 @@ body.menu-open {
     padding: 0 12vw; } }
 
 .explore-our-gallery-container {
-  padding: 24vw 0;
+  margin: 24vw 0 24vw;
   position: relative; }
   .explore-our-gallery-container a.explore-our-gallery {
     display: flex;
@@ -1206,21 +1215,15 @@ body.menu-open {
     bottom: 0;
     left: 0; }
 
-@keyframes gradient {
-  0% {
-    background-position: 0% 50%; }
-  50% {
-    background-position: 100% 50%; }
-  100% {
-    background-position: 0% 50%; } }
-
 .gradient-transition.gradient1 {
-  background: linear-gradient(77.24deg, #f47b20 14.56%, #f15c2c 88.29%);
-  background-size: 100% 100%;
-  animation: gradient 10s ease infinite; }
+  background: linear-gradient(77.24deg, #f47b20 14.56%, #f15c2c 88.29%); }
 
 .gradient-transition.gradient2 {
-  background: linear-gradient(122.97deg, #0e3d52 0%, #000000 95.81%);
+  background: linear-gradient(142.86deg, #F47B20 2.47%, #F15C2C 43.9%, #ED79B0 95.24%);
+  opacity: 0; }
+
+.gradient-transition.white {
+  background: white;
   opacity: 0; }
 
 .homepage-hero {
@@ -1313,12 +1316,18 @@ body.menu-open {
     max-width: 330px; }
 
 .why-triplelift {
-  color: white;
-  padding: 10vw 24px 40vw; }
+  padding: 10vw 24px 0vw; }
   .why-triplelift h2 {
+    color: white;
     font-size: 11vw;
     font-weight: 500;
-    text-align: center; }
+    text-align: center;
+    margin-bottom: 64px; }
+  .why-triplelift .why-triplelift-section {
+    background: white;
+    border-radius: 26px;
+    padding: 24px;
+    margin-top: 48px; }
   .why-triplelift h3 {
     font-size: 10vw;
     text-align: center; }

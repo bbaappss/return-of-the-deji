@@ -1,12 +1,13 @@
 mixin why-triplelift-section(icon, title, body)
-  .why-triplelift-section.flex.flex-column.pt5
+  .why-triplelift-section.flex.flex-column
     .flex.items-end
       img(
-          class="pr4" 
+          class="pr3" 
           src=icon
         )
       h3= title 
     p.pt3= body 
+
 .why-triplelift
   h2.text-primary-gradient Why TripleLift?
   +why-triplelift-section(

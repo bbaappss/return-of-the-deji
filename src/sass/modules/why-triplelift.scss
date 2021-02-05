@@ -1,11 +1,19 @@
 .why-triplelift {
-  color: white;
-  padding: 10vw 24px 40vw;
+  padding: 10vw 24px 0vw;
 
   h2 {
+    color: white;
     font-size: 11vw;
     font-weight: 500;
     text-align: center;
+    margin-bottom: 64px;
+  }
+
+  .why-triplelift-section {
+    background: white;
+    border-radius: 26px;
+    padding: 24px;
+    margin-top: 48px;
   }
 
   h3 {

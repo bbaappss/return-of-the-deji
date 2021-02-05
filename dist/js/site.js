@@ -604,7 +604,7 @@ var Lantern = (function() {
 
 })();
 
-const gradientTL = gsap.timeline( {    
+const whyTLGradientTL = gsap.timeline( {    
   scrollTrigger: {
     trigger: ".why-triplelift",
     start: "40% bottom",
@@ -614,15 +614,35 @@ const gradientTL = gsap.timeline( {
   }
 });
 
-
-gradientTL
+whyTLGradientTL
   .to(
     '.gradient-transition.gradient2', 
     { 
       opacity: 1, 
       duration: 1 
-    }
-  );
+    }, "why-triplelift"
+);
+
+const exploreGalleryGradientTL = gsap.timeline( {    
+  scrollTrigger: {
+    trigger: ".explore-our-gallery-container",
+    start: "-70% center",
+    end: "60% center",
+    scrub: true,
+    markers: true,
+    toggleActions: "play reverse play reverse",
+  }
+});
+
+
+exploreGalleryGradientTL
+  .to(
+    '.gradient-transition.white', 
+    { 
+      opacity: 1, 
+      duration: 1 
+    }, "explore"
+);
 window.setTimeout(function(){$(".loading").addClass("not-loading");}, 3000);
 
 var tl = gsap.timeline({repeat: 0});
@@ -774,7 +794,7 @@ const whyTripleLiftParallax = gsap.timeline( {
   scrollTrigger: {
     trigger: ".why-triplelift",
     start: "10% center",
-    end: "40% center",
+    end: "60% center",
     scrub: true,
     toggleActions: "play reverse play reverse",
   }
@@ -789,6 +809,45 @@ whyTripleLiftParallax
       x: -20,
       stagger: .5
     });
+
+const exploreGalleryParallax = gsap.timeline( {    
+  scrollTrigger: {
+    trigger: ".explore-our-gallery-container",
+    start: "-60% center",
+    end: "60% center",
+    scrub: true,
+    markers: true,
+    toggleActions: "play reverse play reverse",
+  }
+});
+
+exploreGalleryParallax
+  .to(
+    '.why-triplelift-section', 
+    { 
+      opacity: 0, 
+      duration: 1,
+      y: -20,
+  }, "exploreGallery");
+
+
+exploreGalleryParallax
+  .from(
+    '.explore-our-gallery-container', 
+    { 
+      opacity: 0, 
+  }, "exploreGallery");
+
+
+exploreGalleryParallax
+  .to(
+    '.explore-our-gallery-container .animate-border-outer', 
+    { 
+      opacity: 1,
+      scale: 1, 
+      duration: 1,
+  }, "exploreGallery");
+
 $(window).on("load", function () {
 
   // set up hamburger stuff

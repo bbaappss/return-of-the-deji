@@ -149,7 +149,7 @@ const whyTripleLiftParallax = gsap.timeline( {
   scrollTrigger: {
     trigger: ".why-triplelift",
     start: "10% center",
-    end: "40% center",
+    end: "60% center",
     scrub: true,
     toggleActions: "play reverse play reverse",
   }
@@ -164,3 +164,41 @@ whyTripleLiftParallax
       x: -20,
       stagger: .5
     });
+
+const exploreGalleryParallax = gsap.timeline( {    
+  scrollTrigger: {
+    trigger: ".explore-our-gallery-container",
+    start: "-60% center",
+    end: "60% center",
+    scrub: true,
+    markers: true,
+    toggleActions: "play reverse play reverse",
+  }
+});
+
+exploreGalleryParallax
+  .to(
+    '.why-triplelift-section', 
+    { 
+      opacity: 0, 
+      duration: 1,
+      y: -20,
+  }, "exploreGallery");
+
+
+exploreGalleryParallax
+  .from(
+    '.explore-our-gallery-container', 
+    { 
+      opacity: 0, 
+  }, "exploreGallery");
+
+
+exploreGalleryParallax
+  .to(
+    '.explore-our-gallery-container .animate-border-outer', 
+    { 
+      opacity: 1,
+      scale: 1, 
+      duration: 1,
+  }, "exploreGallery");

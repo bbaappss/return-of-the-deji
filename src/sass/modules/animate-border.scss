@@ -1,9 +1,18 @@
 .animate-border-outer {
-    padding: 12px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     background: $primaryGradient;
+    z-index: 2;
+    transform: scale(.8);
+    opacity: 0;
 }
 
 .animate-border-content {
     background-color: white;
     padding: 24px;
+    margin: 12px;
+    z-index: 3;
 }

@@ -1,12 +1,10 @@
-# TripleLift
+# Return Of The Deji
 
 ## Getting Started
 
 Once you're ready and set up with [npm](https://nodejs.org/en/), whip out your terminal and enter in the following goodies:
 
 ```sh
-git clone https://github.com/bbaappss/triplelift.git
-cd triplelift
 npm install gulp-cli -g
 npm install
 gulp

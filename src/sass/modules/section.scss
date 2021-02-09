@@ -1,3 +1,13 @@
 .section {
-    padding: 0 24px;
+  padding: 0 24px;
+
+  h2 {
+    height: inherit;
+  }
+
+  @media (min-width: 1024px) {
+    h2 {
+      font-size: 64px;
+    }
+  }
 }

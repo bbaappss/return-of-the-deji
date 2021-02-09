@@ -1160,6 +1160,23 @@ footer.footer {
       margin: 12px 0 0;
       font-size: 18px; }
 
+.book-container-left,
+.book-container-right {
+  display: flex;
+  flex-direction: column; }
+
+@media (min-width: 1024px) {
+  .homepage-book {
+    flex-direction: row-reverse; }
+    .homepage-book .book-container-left {
+      width: 50%; }
+    .homepage-book .book-container-right {
+      margin-top: -80px;
+      width: 50%; }
+    .homepage-book .book-cover {
+      max-width: inherit;
+      width: 50%; } }
+
 .homepage-hero {
   color: #bde2db;
   display: flex;
@@ -1260,21 +1277,30 @@ footer.footer {
 
 .section {
   padding: 0 24px; }
+  .section h2 {
+    height: inherit; }
+  @media (min-width: 1024px) {
+    .section h2 {
+      font-size: 64px; } }
 
 .the-latest h2 {
   margin-top: 32px; }
 
-.the-latest .the-latest-updates-container .update-container {
-  padding: 0; }
-  .the-latest .the-latest-updates-container .update-container:not(:first-of-type) {
-    margin-top: 64px; }
+.the-latest .the-latest-updates-container .update-container:not(:first-of-type) {
+  margin-top: 64px; }
 
 @media (min-width: 1024px) {
   .the-latest {
     padding: 64px; }
-    .the-latest h2 {
-      font-size: 64px;
-      height: inherit; } }
+    .the-latest .the-latest-updates-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      grid-gap: 100px;
+      justify-items: start;
+      align-items: start; }
+      .the-latest .the-latest-updates-container .update-container:not(:first-of-type) {
+        margin-top: inherit; } }
 
 .update-container {
   display: flex;
@@ -1288,6 +1314,9 @@ footer.footer {
   .update-container .cta {
     margin-top: 24px;
     align-self: flex-end; }
+    @media (min-width: 1024px) {
+      .update-container .cta {
+        align-self: inherit; } }
 
 .update {
   color: #fff;

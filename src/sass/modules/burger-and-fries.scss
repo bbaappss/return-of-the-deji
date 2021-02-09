@@ -5,14 +5,14 @@ html:not([data-scroll="0"]) {
   }
 }
 
-.sticky-header {
-  position: -webkit-sticky;
-  position: -moz-sticky;
-  position: -o-sticky;
-  position: -ms-sticky;
-  position: sticky;
-  z-index: 200;
-}
+// .sticky-header {
+//   position: -webkit-sticky;
+//   position: -moz-sticky;
+//   position: -o-sticky;
+//   position: -ms-sticky;
+//   position: sticky;
+//   z-index: 200;
+// }
 
 .burger-and-fries-container {
   display: flex;

@@ -15,21 +15,23 @@
   }
 }
 
-.section-transition.section1 {
-  background-image: url("/images/streegar-bORAYzcoJ8A-unsplash.jpg");
+.section-transition.bgimage {
+  // background-image: url("/images/streegar-bORAYzcoJ8A-unsplash.jpg");
   // background-image: url("/images/alex-perri-At__EKm5PGE-unsplash.jpg");
   // background-image: url("/images/philip-martin-5aGUyCW_PJw-unsplash.jpg");
-  -webkit-filter: grayscale(100%); /* Ch 23+, Saf 6.0+, BB 10.0+ */
-  filter: grayscale(100%); /* FF 35+ */
-  background-size: cover;
-  background-position: center center;  
+  background-image: url("/images/sonos-sia-uap-00825-scaled.jpg");
+  background-size: 460%;
+  background-position: center top;
+  background-repeat: no-repeat;  
 }
 
-.section-transition.section2 {
+.section-transition.dark {
+  opacity: 0;
   background: $dark;
 }
 
-.section-transition.white {
-  background: rgba(255, 255, 255, 0.1);
+.section-transition.green {
   opacity: 0;
+  background: $green;
 }
+

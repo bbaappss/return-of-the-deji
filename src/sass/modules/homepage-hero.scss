@@ -1,8 +1,11 @@
 .homepage-hero {
   color: $blue;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   padding-top: 60px;
   z-index: 1;
-  min-height: 50vh;
+  height: 100vh;
   overflow: hidden;
 
   .bg {
@@ -22,6 +25,12 @@
     font-weight: 800;
     line-height: 1.4;
   }
+
+  .update-container {
+    margin-bottom: 60px;
+  }
+
+
 }
 
 @media (min-width: 1024px) {

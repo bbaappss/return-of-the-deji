@@ -1004,9 +1004,12 @@ body.modal-open {
 
 .homepage-hero {
   color: #bde2db;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   padding-top: 60px;
   z-index: 1;
-  min-height: 50vh;
+  height: 100vh;
   overflow: hidden; }
   .homepage-hero .bg {
     position: absolute;
@@ -1021,6 +1024,8 @@ body.modal-open {
     font-size: 34px;
     font-weight: 800;
     line-height: 1.4; }
+  .homepage-hero .update-container {
+    margin-bottom: 60px; }
 
 @media (min-width: 1024px) {
   .homepage-hero {

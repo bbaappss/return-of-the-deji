@@ -1,26 +1,7 @@
 .not-home,
 html:not([data-scroll="0"]) {
   .burger-and-fries-container {
-    background: white;
-
-    .logo-in-navigation .white-logo {
-      opacity: 0;
-    }
-
-    .logo-in-navigation .orange-logo {
-      opacity: 1;
-    }
-
-    .menu-on-large a {
-      color: black;
-      &:hover {
-        border-bottom-color: black;
-      }
-    }
-
-    .login {
-      border: 1px solid black;
-    }
+    background: #cacaca;
   }
 }
 
@@ -37,27 +18,12 @@ html:not([data-scroll="0"]) {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 71px;
-  padding: 18px 18px;
+  height: 60px;
+  padding: 12px 16px;
   transition: 0.6s ease-in;
   width: 100%;
   z-index: 200;
   position: fixed;
-
-  @media (min-width: 1024px) {
-    height: 78px;
-  }
-
-  .logo-in-navigation * {
-    transition: 0.6s ease-out;
-  }
-
-  .logo-in-navigation .orange-logo {
-    position: absolute;
-    opacity: 0;
-    z-index: 1;
-    left: 0;
-  }
 
   .burger-and-fries {
     display: flex;
@@ -87,14 +53,15 @@ html:not([data-scroll="0"]) {
   }
 }
 
-body.modal-open {
-  overflow-y: hidden;
+.logo-in-navigation {
+  text-decoration: none;
+  color: #000;
+  font-size: 25px;
+  font-weight: bold;
 }
 
-html:not([data-scroll="0"]) .not-home body.menu-open,
-html:not([data-scroll="0"]) body.menu-open,
-body.menu-open {
-  overflow-y: hidden;
+body.modal-open {
+  overflow-y: hidden !important;
 }
 
 .menu-hide {

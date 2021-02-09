@@ -897,6 +897,31 @@ html:not([data-scroll="0"]) .logo-in-navigation {
   opacity: 0;
   transition: 1s; }
 
+.not-home .hamburger-bg,
+html:not([data-scroll="0"]) .hamburger-bg {
+  opacity: 1; }
+
+.not-home .menu-open .logo-in-navigation,
+html:not([data-scroll="0"]) .menu-open .logo-in-navigation {
+  color: #4c5f57;
+  opacity: 1; }
+
+.hamburger {
+  position: relative; }
+
+.hamburger-bg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 56px;
+  height: 56px;
+  transform: translate(-50%, -50%);
+  background: #4c5f57;
+  border-radius: 300px;
+  opacity: 0;
+  transition: 1s;
+  z-index: 0; }
+
 .burger-and-fries-container {
   display: flex;
   align-items: center;

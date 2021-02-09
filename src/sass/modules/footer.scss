@@ -3,13 +3,26 @@ footer.footer {
 
   display: flex;
   flex-direction: column;
-  padding: 24px;
+  padding: 48px 24px 24px;
+
+  .sign-off-container {
+    margin-top: 48px;
+    padding-top: 48px;
+    border-top: 1px solid $green;
+    display: flex;
+    flex-direction: column;
+  }
 
   h4 {
     padding-bottom: 12px;
   }
 
   .signature {
-    width: 75vw;
+    width: 40vw;
+  }
+
+  .copyright {
+    margin-top: 48px;
+    font-size: 12px;
   }
 }

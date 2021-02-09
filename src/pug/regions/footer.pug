@@ -1,8 +1,17 @@
 
 footer.footer
-  h4 Thank you for visiting,
-  img.signature(src="/images/signature.svg")
-  span.copyright Copyright © 2021 All Rights Reserved
+  .newsletter-container
+    h2.section-headline.h2 Stay connected
+    h3 Use the form below to sign up for my newsletter.
+    .input-container
+      label Email-address
+      .input
+        input(type="text" placeholder="you@yourhost.com")
+      button Subscribe
+  .sign-off-container
+    h4 Thank you for visiting,
+    img.signature(src="/images/signature.svg")
+    span.copyright Copyright © 2021 All Rights Reserved
 script(src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js")
 script(src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollTrigger.min.js")
 script(src="js/site.js")

@@ -1,10 +1,7 @@
 mixin update(updateType, date, title, body)
-    .update(class!=attributes.class)
+    a.update(class!=attributes.class href=attributes.href)
         span.update-type=updateType
         span.update-date=date
         span.update-title=title
         span.update-body=body
-        a.read-more Read more
-        a.cta 
-            span More news
-            img(src="/images/arrow-right.svg")
+        .read-more Read more

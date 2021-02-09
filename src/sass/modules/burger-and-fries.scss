@@ -1,8 +1,14 @@
 .not-home,
 html:not([data-scroll="0"]) {
   .burger-and-fries-container {
-    background: #cacaca;
+    // background: #cacaca;
   }
+  
+  .logo-in-navigation {
+    opacity: 0;
+    transition: 1s;
+  }
+
 }
 
 // .sticky-header {
@@ -54,6 +60,7 @@ html:not([data-scroll="0"]) {
 }
 
 .logo-in-navigation {
+  transition: 1s;
   text-decoration: none;
   color: white;
   font-size: 25px;

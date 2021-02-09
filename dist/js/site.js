@@ -691,7 +691,6 @@ const sectionTL = gsap.timeline( {
       trigger: ".section2",
       start: "top bottom",
       end: "center bottom",
-        markers: true,
       scrub: true,
       toggleActions: "play reverse play reverse",
     }

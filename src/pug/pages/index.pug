@@ -27,20 +27,66 @@ block content
     .section-transition.green
   include ../modules/homepage-hero.pug
   .section2.update-container
-    +update(
-      "News",
-      "February 5, 2021",
-      "Listen to When We Were Patched at Escape Pod",
-      "I'm honored to have my short story When We Were Patched available on audio over at Esacpe Pod.",
-      "Read more"
-    )(class="update-news" href="news.html")
-    +update(
-      "News",
-      "February 5, 2021",
-      "Listen to When We Were Patched at Escape Pod",
-      "I'm honored to have my short story When We Were Patched available on audio over at Esacpe Pod.",
-      "Read more"
-    )(class="update-news" href="news.html")    
+    h2.section-headline.h2.blue The Latest
+    .news-container
+      +update(
+        "News",
+        "",
+        "PANEL AT THE NEBULA AWARDS ON MAY 31",
+        "I’ll be speaking at the 2020 Nebula Awards with a panel of great authors.",
+        "Read more"
+      )(class="update-news" href="news.html")
+      a.cta 
+        span More news
+        img(src="/images/arrow-right.svg")
+    .insight-container
+      +update(
+        "Short Fiction",
+        "",
+        "We Are the Olfanauts",
+        "This near-future scifi story is about a young Kenyan man who is trying to make at the hottest new tech company, which specializes in scented social media.",
+        "Read more"
+      )(class="update-short-fiction" href="short-fiction.html")    
+      a.cta 
+        span More short fiction
+        img(src="/images/arrow-right.svg")
+      +update(
+        "Article",
+        "",
+        "Moving Towards Science Fiction Thinking",
+        "Tor.com: Lessons from my work fighting for human rights online and how we can empower people by using the tools of science fiction, such as world building.",
+        "Read more"
+      )(class="update-article" href="article.html")    
+      a.cta 
+        span More articles
+        img(src="/images/arrow-right.svg")
+      +update(
+        "Interview",
+        "",
+        "Yale News 2017",
+        "On fiction, Nigerians in Space, and After the Flare",
+        "Read more"
+      )(class="update-interview" href="interview.html")
+      a.cta 
+        span More interviews
+        img(src="/images/arrow-right.svg")
+    
+  .section.section3.books
+    h2.section-headline.h2.blue Latest Book
+    .homepage-book
+      span.book-title After The Flare
+      img.book-cover(src="/images/300_Olukotun_AftertheFlare_Cover.jpeg")
+      span.book-award Winner of the 2018 Philip K. Dick <br/> special citation award
+      span.book-description After the Flare is a futuristic thriller published by Unnamed Press.
+      span.quote-body "The entire novel is spectacularly imagined, well-written, and a pleasure to read. An absorbing novel that explores a compelling, African-centered future world."
+      span.quote-author —Kirkus Reviews
+      .available-from-container
+        span.available-from Available for purchase from
+        a(href="local-indie") Your local Indie Book store
+        a(href="amazon") Amazon
     a.cta 
-      span More news
-      img(src="/images/arrow-right.svg")
+      span More books
+      img(src="/images/arrow-right-black.svg")
+  .section.section4.featured-in
+    h2.section-headline.h2.blue Deji and his work are featured in
+    

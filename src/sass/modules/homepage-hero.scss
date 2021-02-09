@@ -1,20 +1,24 @@
 .homepage-hero {
-  color: black;
-  padding-top: 80px;
-  min-height: 100vh;
+  color: white;
+  padding-top: 64px;
   z-index: 1;
+  min-height: 50vh;
 
-  .copy {
-    padding: 0 24px;
-    h1 {
-      font-size: 26px;
-      font-weight: 500;
-      line-height: 1.3;
-    }
+  .bg-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    object-position: 30% 0px;
+  }
 
-    p {
-      font-size: 20px;
-    }
+  .headline {
+    padding: 0 16px;
+    font-size: 20px;
+    line-height: 1.2;
   }
 }
 

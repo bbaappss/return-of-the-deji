@@ -604,7 +604,6 @@ var Lantern = (function() {
 
 })();
 
-
 window.setTimeout(function(){$(".loading").addClass("not-loading");}, 3000);
 
 var tl = gsap.timeline({repeat: 0});

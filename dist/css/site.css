@@ -26,7 +26,7 @@
   .hamburger.is-active .hamburger-inner,
   .hamburger.is-active .hamburger-inner::before,
   .hamburger.is-active .hamburger-inner::after {
-    background-color: #000; }
+    background-color: #fff; }
 
 .hamburger-box {
   width: 30px;
@@ -41,7 +41,7 @@
   .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
     width: 30px;
     height: 2px;
-    background-color: #000;
+    background-color: #fff;
     border-radius: 0px;
     position: absolute;
     transition-property: transform;
@@ -915,7 +915,7 @@ html:not([data-scroll="0"]) .burger-and-fries-container {
 
 .logo-in-navigation {
   text-decoration: none;
-  color: #000;
+  color: white;
   font-size: 25px;
   font-weight: bold; }
 
@@ -1002,44 +1002,24 @@ body.modal-open {
   .burger-and-fries-container {
     padding: 0 12vw; } }
 
-.gradient-transition-container {
-  height: 100vh;
-  position: fixed;
-  width: 100%;
-  z-index: -1; }
-  .gradient-transition-container > * {
-    height: 100vh;
-    position: absolute;
-    width: 100%;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0; }
-
-.gradient-transition.gradient1 {
-  background: white; }
-
-.gradient-transition.gradient2 {
-  background: rgba(255, 255, 255, 0.5);
-  opacity: 0; }
-
-.gradient-transition.white {
-  background: rgba(255, 255, 255, 0.1);
-  opacity: 0; }
-
 .homepage-hero {
-  color: black;
-  padding-top: 80px;
-  min-height: 100vh;
-  z-index: 1; }
-  .homepage-hero .copy {
-    padding: 0 24px; }
-    .homepage-hero .copy h1 {
-      font-size: 26px;
-      font-weight: 500;
-      line-height: 1.3; }
-    .homepage-hero .copy p {
-      font-size: 20px; }
+  color: white;
+  padding-top: 64px;
+  z-index: 1;
+  min-height: 50vh; }
+  .homepage-hero .bg-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    object-position: 30% 0px; }
+  .homepage-hero .headline {
+    padding: 0 16px;
+    font-size: 20px;
+    line-height: 1.2; }
 
 @media (min-width: 1024px) {
   .homepage-hero {
@@ -1063,6 +1043,46 @@ body.modal-open {
   justify-content: center; }
   .loading.not-loading {
     z-index: -100; }
+
+.news-update {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 0 24px; }
+  .news-update .update-type {
+    background: white;
+    color: black;
+    width: fit-content;
+    text-transform: uppercase;
+    padding: 6px 8px 4px;
+    font-size: 13px;
+    font-weight: 600;
+    border-radius: 4px; }
+
+.section-transition-container {
+  height: 100vh;
+  position: fixed;
+  width: 100%;
+  z-index: -1; }
+  .section-transition-container > * {
+    height: 100vh;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0; }
+
+.section-transition.section1 {
+  background: black; }
+
+.section-transition.gradient2 {
+  background: rgba(255, 255, 255, 0.5);
+  opacity: 0; }
+
+.section-transition.white {
+  background: rgba(255, 255, 255, 0.1);
+  opacity: 0; }
 
 .does-not-work:hover {
   cursor: pointer; }

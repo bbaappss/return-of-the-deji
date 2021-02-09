@@ -977,7 +977,7 @@ p {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(77.24deg, #f47b20 14.56%, #f15c2c 88.29%);
+  background: black;
   z-index: 2;
   opacity: 0; }
 
@@ -998,20 +998,13 @@ html:not([data-scroll="0"]) .burger-and-fries-container {
     opacity: 1; }
   .not-home .burger-and-fries-container .menu-on-large a,
   html:not([data-scroll="0"]) .burger-and-fries-container .menu-on-large a {
-    color: #f15c2c; }
+    color: black; }
     .not-home .burger-and-fries-container .menu-on-large a:hover,
     html:not([data-scroll="0"]) .burger-and-fries-container .menu-on-large a:hover {
-      border-bottom-color: #f15c2c; }
+      border-bottom-color: black; }
   .not-home .burger-and-fries-container .login,
   html:not([data-scroll="0"]) .burger-and-fries-container .login {
-    border: 1px solid #f15c2c; }
-  .not-home .burger-and-fries-container .hamburger-inner,
-  .not-home .burger-and-fries-container .hamburger-inner::before,
-  .not-home .burger-and-fries-container .hamburger-inner::after,
-  html:not([data-scroll="0"]) .burger-and-fries-container .hamburger-inner,
-  html:not([data-scroll="0"]) .burger-and-fries-container .hamburger-inner::before,
-  html:not([data-scroll="0"]) .burger-and-fries-container .hamburger-inner::after {
-    background-color: #f15c2c; }
+    border: 1px solid black; }
 
 .sticky-header {
   position: -webkit-sticky;
@@ -1041,22 +1034,9 @@ html:not([data-scroll="0"]) .burger-and-fries-container {
     opacity: 0;
     z-index: 1;
     left: 0; }
-  .burger-and-fries-container .hamburger-inner,
-  .burger-and-fries-container .hamburger-inner::before,
-  .burger-and-fries-container .hamburger-inner::after {
-    height: 3px; }
   .burger-and-fries-container .burger-and-fries {
     display: flex;
     align-items: center; }
-  .burger-and-fries-container .rsvp {
-    border: 1px solid black;
-    color: black;
-    padding: 4px 20px;
-    border-radius: 4px;
-    text-decoration: none; }
-    .burger-and-fries-container .rsvp span {
-      display: block;
-      padding-top: 6px; }
   .burger-and-fries-container .burger {
     display: block;
     position: relative;
@@ -1080,7 +1060,7 @@ body.menu-open {
   overflow-y: hidden; }
 
 .menu-hide {
-  background: linear-gradient(122.97deg, #0e3d52 0%, #000000 95.81%);
+  background: #cdcdcd;
   height: 100vh;
   opacity: 0;
   right: -100%;
@@ -1118,7 +1098,7 @@ body.menu-open {
   align-items: center; }
 
 .main-nav a {
-  color: #fff;
+  color: black;
   letter-spacing: 1.5px;
   font-size: 13px;
   font-weight: 400;
@@ -1130,7 +1110,7 @@ body.menu-open {
 .menu-on-large .main-nav a {
   border-bottom: 4px solid transparent; }
   .menu-on-large .main-nav a:hover {
-    border-bottom: 4px solid white; }
+    border-bottom: 4px solid black; }
 
 .login {
   border: 1px solid #fff;
@@ -1145,71 +1125,19 @@ body.menu-open {
   text-transform: capitalize;
   transition: 0.6s ease-out; }
 
-.hamburger-box {
-  height: 24px;
-  width: 28px; }
-
-.burger-and-fries-container .hamburger-inner,
-.burger-and-fries-container .hamburger-inner::before,
-.burger-and-fries-container .hamburger-inner::after {
-  height: 2px; }
-
-.hamburger-inner,
-.hamburger-inner::before,
-.hamburger-inner::after {
-  width: 28px;
-  background-color: #fff;
-  position: absolute;
-  transition-property: transform;
-  transition-duration: 0.6s;
-  transition-timing-function: ease; }
-
 @media (max-width: 1023px) {
   .menu-on-large {
     display: none; } }
 
 @media (min-width: 1024px) {
+  .hamburger {
+    display: none; }
   .burger-and-fries-container {
-    padding: 0 2vw; }
-    .burger-and-fries-container .hamburger {
-      display: none; } }
+    padding: 0 2vw; } }
 
 @media (min-width: 1440px) {
   .burger-and-fries-container {
     padding: 0 12vw; } }
-
-.explore-our-gallery-container {
-  margin: 24vw 0 24vw;
-  position: relative;
-  overflow: hidden; }
-  .explore-our-gallery-container a.explore-our-gallery {
-    display: flex;
-    flex-direction: column; }
-    .explore-our-gallery-container a.explore-our-gallery > span {
-      z-index: 1; }
-    .explore-our-gallery-container a.explore-our-gallery .headline {
-      font-size: 32px;
-      font-weight: 800;
-      line-height: 1.3;
-      background: linear-gradient(142.86deg, #F47B20 2.47%, #F15C2C 43.9%, #ED79B0 95.24%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      -webkit-box-decoration-break: clone; }
-    .explore-our-gallery-container a.explore-our-gallery .cta {
-      align-self: flex-end;
-      align-items: center;
-      justify-content: flex-end;
-      margin-top: 36px; }
-      .explore-our-gallery-container a.explore-our-gallery .cta span {
-        font-weight: 600;
-        text-transform: uppercase;
-        margin-right: 12px; }
-
-@media (min-width: 1024px) {
-  .explore-our-gallery-container {
-    margin: 24vw 12vw 12vw; }
-    .explore-our-gallery-container a.explore-our-gallery .headline {
-      font-size: 4vw; } }
 
 .gradient-transition-container {
   height: 100vh;
@@ -1226,18 +1154,18 @@ body.menu-open {
     left: 0; }
 
 .gradient-transition.gradient1 {
-  background: linear-gradient(77.24deg, #f47b20 14.56%, #f15c2c 88.29%); }
+  background: white; }
 
 .gradient-transition.gradient2 {
-  background: linear-gradient(142.86deg, #F47B20 2.47%, #F15C2C 43.9%, #ED79B0 95.24%);
+  background: rgba(255, 255, 255, 0.5);
   opacity: 0; }
 
 .gradient-transition.white {
-  background: white;
+  background: rgba(255, 255, 255, 0.1);
   opacity: 0; }
 
 .homepage-hero {
-  color: white;
+  color: black;
   padding-top: 80px;
   min-height: 100vh;
   z-index: 1; }
@@ -1272,103 +1200,6 @@ body.menu-open {
   justify-content: center; }
   .loading.not-loading {
     z-index: -100; }
-
-.phone-breakout {
-  position: relative;
-  margin-top: 4vh;
-  height: 40vh;
-  width: 100%; }
-  .phone-breakout img {
-    top: 0;
-    width: 80%;
-    position: absolute;
-    left: 55%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    max-width: 330px; }
-
-.we-work-with {
-  padding-bottom: 24vw; }
-  .we-work-with h3 {
-    font-size: 8vw;
-    font-weight: bold;
-    text-align: center; }
-  .we-work-with h4 {
-    font-size: 6vw;
-    font-weight: 500; }
-  .we-work-with p {
-    margin-top: 16px; }
-  .we-work-with .we-work-with-section-container {
-    color: white;
-    margin: 8vw 12px 12px;
-    background: linear-gradient(77.24deg, #f47b20 14.56%, #f15c2c 88.29%);
-    border-radius: 24px;
-    padding: 30px 24px 36px; }
-  .we-work-with .logo-grid {
-    margin-top: 24px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    column-gap: 36px;
-    row-gap: 36px; }
-    .we-work-with .logo-grid .work-with-logo {
-      width: 60px; }
-
-@media (min-width: 1024px) {
-  .we-work-with h3 {
-    font-size: 6vw; }
-  .we-work-with h4 {
-    font-size: 3vw; }
-  .we-work-with > .container {
-    display: grid;
-    margin: 0 auto;
-    max-width: 90vw;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 3vw;
-    margin-top: 4vw; }
-  .we-work-with .we-work-with-section-container {
-    margin-bottom: -4vw; }
-  .we-work-with .we-work-with-section-container:nth-child(1) {
-    margin-bottom: 4vw; }
-  .we-work-with .we-work-with-section-container:nth-child(1) {
-    margin-top: 4vw; }
-  .we-work-with .we-work-with-section-container:nth-child(3) {
-    margin-bottom: 8vw;
-    margin-top: 4vw; }
-  .we-work-with .we-work-with-section-container:nth-child(4) {
-    margin-top: 9vw; } }
-
-.why-triplelift {
-  padding: 10vw 24px 0vw; }
-  .why-triplelift h2 {
-    color: white;
-    font-size: 11vw;
-    font-weight: 500;
-    text-align: center;
-    margin-bottom: 64px; }
-  .why-triplelift .why-triplelift-section {
-    background: white;
-    border-radius: 26px;
-    padding: 24px;
-    margin-top: 48px; }
-  .why-triplelift h3 {
-    font-size: 10vw;
-    text-align: center; }
-
-@media (min-width: 1024px) {
-  .why-triplelift {
-    margin: 0 auto;
-    max-width: 90vw; }
-    .why-triplelift h2 {
-      font-size: 6vw;
-      text-align: left; }
-    .why-triplelift h3 {
-      font-size: 3vw; }
-    .why-triplelift .why-triplelift-section-container {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      column-gap: 3vw; }
-      .why-triplelift .why-triplelift-section-container .why-triplelift-section {
-        margin-top: 0; } }
 
 .does-not-work:hover {
   cursor: pointer; }

@@ -1,5 +1,3 @@
-# Return Of The Deji
-
 ## Getting Started
 
 Once you're ready and set up with [npm](https://nodejs.org/en/), whip out your terminal and enter in the following goodies:

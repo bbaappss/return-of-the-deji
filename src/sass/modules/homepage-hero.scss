@@ -28,20 +28,22 @@
   .update-container {
     margin-bottom: 60px;
   }
-
-
 }
 
 @media (min-width: 1024px) {
   .homepage-hero {
     display: flex;
-    align-items: center;
-    padding-top: 0;
-  }
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 64px;
 
-  .slide-content-container {
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
+    .headline {
+      font-size: 64px;
+    }
+
+    .update-container {
+      margin-top: 48px;
+      max-width: 400px;
+    }
   }
 }

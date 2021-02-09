@@ -22,7 +22,12 @@
   background-image: url("/images/sonos-sia-uap-00825-scaled.jpg");
   background-size: 460%;
   background-position: center top;
-  background-repeat: no-repeat;  
+  background-repeat: no-repeat;
+
+  @media (min-width: 1024px) {
+    background-size: 200%;
+    background-position: 40% top;
+  }
 }
 
 .section-transition.dark {
@@ -34,4 +39,3 @@
   opacity: 0;
   background: $green;
 }
-

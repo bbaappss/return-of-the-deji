@@ -1,12 +1,19 @@
 .section.featured-in {
   padding-top: 36px;
+  padding-bottom: 36px;
+
   h2 {
     font-weight: bold;
     line-height: 1.4;
     font-size: 24px;
+    @media (min-width: 1024px) {
+      font-size: 48px;
+    }
   }
 
   img {
     padding-top: 24px;
+    display: block;
+    margin: 0 auto;
   }
 }

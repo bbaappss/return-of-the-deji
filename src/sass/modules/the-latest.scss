@@ -4,6 +4,7 @@
   }
   .the-latest-updates-container {
     .update-container {
+      padding: 0;
       &:not(:first-of-type) {
         margin-top: 64px;
       }

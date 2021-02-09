@@ -1,5 +1,6 @@
 .section {
   padding: 0 24px;
+  @extend .padding-on-large-screens;
 
   h2 {
     height: inherit;

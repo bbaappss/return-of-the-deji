@@ -1,5 +1,7 @@
 extends ../template.pug
 
+include ../mixins/update.pug
+
 block content
   //- include ../modules/loading.pug
 
@@ -22,10 +24,10 @@ block content
   .section-transition-container
     .section-transition.section1
   include ../modules/homepage-hero.pug
-  .news-update
-    span.update-type News
-    span February 5, 2021
-    span Listen to WHen We Were Patched at Escape Pod 
-    span I'm honored to have my short story When We Were Patched available on audio over at Esacpe Pod. 
-    a Read more 
-    a More news
+  .update-container
+    +update(
+      "News",
+      "February 5, 2021",
+      "Listen to When We Were Patched at Escape Pod",
+      "I'm honored to have my short story When We Were Patched available on audio over at Esacpe Pod."
+    )(class="update-news")

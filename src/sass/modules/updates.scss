@@ -1,0 +1,48 @@
+.update-type {
+  background: white;
+  color: black;
+  width: fit-content;
+  text-transform: uppercase;
+  padding: 6px 8px 4px;
+  font-size: 13px;
+  font-weight: 600;
+  border-radius: 4px;
+}
+
+.update-date {
+  font-size: 13px;
+  margin-top: 12px;
+}
+
+.update-title {
+  font-size: 26px;
+  font-weight: 800;
+  line-height: 1.2;
+  margin-top: 24px;
+}
+
+.update-body {
+  font-size: 18px;
+  line-height: 1.4;
+  margin-top: 12px;
+}
+
+.read-more {
+  text-decoration: underline;
+  font-size: 18px;
+  margin-top: 14px;
+}
+
+.update-container {
+  .cta {
+    align-self: flex-end;
+    margin-top: 24px;
+  }
+}
+
+.update {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 0 24px;
+}

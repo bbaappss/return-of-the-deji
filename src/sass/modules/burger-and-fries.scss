@@ -12,20 +12,20 @@ html:not([data-scroll="0"]) {
     }
 
     .menu-on-large a {
-      color: $amplifiedOrange;
+      color: black;
       &:hover {
-        border-bottom-color: $amplifiedOrange;
+        border-bottom-color: black;
       }
     }
 
     .login {
-      border: 1px solid $amplifiedOrange;
+      border: 1px solid black;
     }
 
     .hamburger-inner,
     .hamburger-inner::before,
     .hamburger-inner::after {
-      background-color: $amplifiedOrange;
+      background-color: black;
     }
   }
 }

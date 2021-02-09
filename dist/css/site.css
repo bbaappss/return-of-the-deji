@@ -880,13 +880,15 @@ p {
 .section.books {
   background: #e4dcbe;
   padding-top: 64px;
+  padding-bottom: 32px;
   margin-top: 36px;
   display: flex;
   flex-direction: column; }
   .section.books .cta {
     align-self: flex-end;
     color: black;
-    border-bottom: 1px solid black; }
+    border-bottom: 1px solid black;
+    margin-top: 32px; }
   .section.books h2 {
     color: #1c1c1c; }
 
@@ -1022,6 +1024,51 @@ body.modal-open {
     background-color: #4c5f57;
     opacity: .75; }
 
+.section.featured-in {
+  padding-top: 36px; }
+  .section.featured-in h2 {
+    font-weight: bold;
+    line-height: 1.4;
+    font-size: 24px; }
+  .section.featured-in img {
+    padding-top: 24px; }
+
+footer.footer {
+  background: #bde2db;
+  display: flex;
+  flex-direction: column;
+  padding: 24px; }
+  footer.footer h4 {
+    padding-bottom: 12px; }
+  footer.footer .signature {
+    width: 75vw; }
+
+.section.get-connected {
+  padding-top: 64px;
+  padding-bottom: 64px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+  .section.get-connected h2 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    padding-bottom: 42px;
+    border-bottom: 2px solid #bde2db;
+    width: fit-content;
+    margin-bottom: 24px; }
+
+.social-media-grid {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .social-media-grid a {
+    height: 60px;
+    padding: 0 30px; }
+  .social-media-grid svg path {
+    fill: #bde2db; }
+
 .homepage-book {
   display: flex;
   flex-direction: column; }
@@ -1116,6 +1163,20 @@ body.modal-open {
   justify-content: center; }
   .loading.not-loading {
     z-index: -100; }
+
+.section.newsletter-container {
+  padding-top: 48px;
+  padding-bottom: 48px;
+  background: #bde2db; }
+  .section.newsletter-container h2 {
+    color: #4c5f57;
+    font-weight: bold;
+    margin-bottom: 24px; }
+  .section.newsletter-container h3 {
+    font-size: 24px;
+    line-height: 1.2; }
+  .section.newsletter-container .input-container {
+    margin-top: 0px; }
 
 .section-transition-container {
   height: 100vh;
@@ -1243,3 +1304,22 @@ a {
 
 .section-headline {
   margin-bottom: 36px; }
+
+.input-container {
+  display: flex;
+  flex-direction: column; }
+  .input-container label {
+    color: #bde2db; }
+  .input-container input {
+    margin-top: 6px;
+    padding: 12px;
+    width: 100%; }
+  .input-container button {
+    margin-top: 12px;
+    border: 0;
+    background: white;
+    color: #4c5f57;
+    width: fit-content;
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 6px; }

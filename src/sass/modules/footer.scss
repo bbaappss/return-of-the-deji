@@ -1,0 +1,15 @@
+footer.footer {
+  background: $blue;
+
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+
+  h4 {
+    padding-bottom: 12px;
+  }
+
+  .signature {
+    width: 75vw;
+  }
+}

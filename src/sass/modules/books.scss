@@ -1,17 +1,19 @@
 .section.books {
-    background: $gold;
-    padding-top: 64px;
-    margin-top: 36px;  
-    display: flex;
-    flex-direction: column;
-    
-    .cta {
-        align-self: flex-end;
-        color: black;
-        border-bottom: 1px solid black;
-    }
+  background: $gold;
+  padding-top: 64px;
+  padding-bottom: 32px;
+  margin-top: 36px;
+  display: flex;
+  flex-direction: column;
 
-    h2 {
-        color: $dark
-    }
+  .cta {
+    align-self: flex-end;
+    color: black;
+    border-bottom: 1px solid black;
+    margin-top: 32px;
+  }
+
+  h2 {
+    color: $dark;
+  }
 }

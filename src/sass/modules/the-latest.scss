@@ -1,0 +1,23 @@
+.the-latest {
+  h2 {
+    margin-top: 32px;
+  }
+  .the-latest-updates-container {
+    .update-container {
+      padding: 0;
+      &:not(:first-of-type) {
+        margin-top: 64px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .the-latest {
+    h2 {
+      font-size: 64px;
+      height: inherit;
+    }
+    padding: 64px;
+  }
+}

@@ -3,12 +3,17 @@
   flex-direction: column;
   padding: 0 24px;
 
+  @media (min-width: 1024px) {
+    padding: 0;
+  }
+
   a {
     text-decoration: none;
   }
 
   .cta {
     margin-top: 24px;
+    align-self: flex-end;
   }
 }
 
@@ -21,7 +26,6 @@
     margin-top: 56px;
   }
 }
-
 
 .update-type {
   color: black;
@@ -52,7 +56,6 @@
   &.update-short-fiction {
     background: $red;
   }
-
 }
 
 .update-date {
@@ -88,14 +91,4 @@
   a.update {
     margin-top: 64px;
   }
-}
-
-.news-container,
-.insight-container {
-  display: flex;
-  flex-direction: column;
-  .cta {
-    align-self: flex-end;
-  }
-
 }

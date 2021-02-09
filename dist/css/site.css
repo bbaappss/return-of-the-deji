@@ -1181,6 +1181,9 @@ footer.footer {
     font-size: 34px;
     font-weight: 800;
     line-height: 1.4; }
+    @media (min-width: 1024px) {
+      .homepage-hero .headline {
+        padding: 0; } }
   .homepage-hero .update-container {
     margin-bottom: 60px; }
 
@@ -1189,7 +1192,7 @@ footer.footer {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    padding: 64px; }
+    padding: 100px 64px; }
     .homepage-hero .headline {
       font-size: 64px; }
     .homepage-hero .update-container {
@@ -1258,14 +1261,33 @@ footer.footer {
 .section {
   padding: 0 24px; }
 
+.the-latest h2 {
+  margin-top: 32px; }
+
+.the-latest .the-latest-updates-container .update-container {
+  padding: 0; }
+  .the-latest .the-latest-updates-container .update-container:not(:first-of-type) {
+    margin-top: 64px; }
+
+@media (min-width: 1024px) {
+  .the-latest {
+    padding: 64px; }
+    .the-latest h2 {
+      font-size: 64px;
+      height: inherit; } }
+
 .update-container {
   display: flex;
   flex-direction: column;
   padding: 0 24px; }
+  @media (min-width: 1024px) {
+    .update-container {
+      padding: 0; } }
   .update-container a {
     text-decoration: none; }
   .update-container .cta {
-    margin-top: 24px; }
+    margin-top: 24px;
+    align-self: flex-end; }
 
 .update {
   color: #fff;
@@ -1321,14 +1343,6 @@ footer.footer {
 
 .insight-container a.update {
   margin-top: 64px; }
-
-.news-container,
-.insight-container {
-  display: flex;
-  flex-direction: column; }
-  .news-container .cta,
-  .insight-container .cta {
-    align-self: flex-end; }
 
 .does-not-work:hover {
   cursor: pointer; }

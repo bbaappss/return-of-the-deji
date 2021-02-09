@@ -16,12 +16,17 @@
 }
 
 .section-transition.section1 {
-  background: black;
+  background-image: url("/images/streegar-bORAYzcoJ8A-unsplash.jpg");
+  // background-image: url("/images/alex-perri-At__EKm5PGE-unsplash.jpg");
+  // background-image: url("/images/philip-martin-5aGUyCW_PJw-unsplash.jpg");
+  -webkit-filter: grayscale(100%); /* Ch 23+, Saf 6.0+, BB 10.0+ */
+  filter: grayscale(100%); /* FF 35+ */
+  background-size: cover;
+  background-position: center center;  
 }
 
-.section-transition.gradient2 {
-  background: rgba(255, 255, 255, 0.5);
-  opacity: 0;
+.section-transition.section2 {
+  background: $dark;
 }
 
 .section-transition.white {

@@ -1003,15 +1003,12 @@ body.modal-open {
     padding: 0 12vw; } }
 
 .homepage-hero {
-  color: white;
-  padding-top: 64px;
+  color: #bde2db;
+  padding-top: 60px;
   z-index: 1;
   min-height: 50vh;
   overflow: hidden; }
-  .homepage-hero .bg-image {
-    background-image: url("/images/streegar-bORAYzcoJ8A-unsplash.jpg");
-    background-size: cover;
-    background-position: 35% center;
+  .homepage-hero .bg {
     position: absolute;
     top: 0;
     left: 0;
@@ -1019,9 +1016,11 @@ body.modal-open {
     height: 100%;
     z-index: -1; }
   .homepage-hero .headline {
-    padding: 0 16px;
-    font-size: 20px;
-    line-height: 1.2; }
+    background: rgba(255, 255, 255, 0.15);
+    padding: 16px 16px;
+    font-size: 34px;
+    font-weight: 800;
+    line-height: 1.4; }
 
 @media (min-width: 1024px) {
   .homepage-hero {
@@ -1061,11 +1060,16 @@ body.modal-open {
     left: 0; }
 
 .section-transition.section1 {
-  background: black; }
+  background-image: url("/images/streegar-bORAYzcoJ8A-unsplash.jpg");
+  -webkit-filter: grayscale(100%);
+  /* Ch 23+, Saf 6.0+, BB 10.0+ */
+  filter: grayscale(100%);
+  /* FF 35+ */
+  background-size: cover;
+  background-position: center center; }
 
-.section-transition.gradient2 {
-  background: rgba(255, 255, 255, 0.5);
-  opacity: 0; }
+.section-transition.section2 {
+  background: #1c1c1c; }
 
 .section-transition.white {
   background: rgba(255, 255, 255, 0.1);
@@ -1078,16 +1082,17 @@ body.modal-open {
   .update-container a {
     text-decoration: none; }
   .update-container .cta {
-    align-self: flex-end;
     margin-top: 24px; }
 
 .update {
   color: #fff;
   display: flex;
   flex-direction: column; }
+  .update + .update {
+    margin-top: 56px; }
 
 .update-type {
-  background: white;
+  background: #cab150;
   color: black;
   width: fit-content;
   text-transform: uppercase;
@@ -1108,7 +1113,7 @@ body.modal-open {
 
 .update-body {
   font-size: 18px;
-  line-height: 1.4;
+  line-height: 1.5;
   margin-top: 12px; }
 
 .read-more {
@@ -1124,9 +1129,12 @@ body.modal-open {
 .does-not-work:hover {
   cursor: pointer; }
 
+a {
+  color: white; }
+
 .cta {
   border: 1px solid white;
-  border-radius: 6px;
+  border-radius: 36px;
   color: white;
   width: fit-content;
   padding: 12px 16px;

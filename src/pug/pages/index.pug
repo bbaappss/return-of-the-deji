@@ -26,11 +26,26 @@ block content
   include ../modules/homepage-hero.pug
   .update-container
     +update(
+      "Upcoming Event",
+      "On March 5, 2021",
+      "Listen to me lecture at a Small College in Somewhere, USA",
+      "Phasellus sollicitudin mauris ut volutpat feugiat. Mauris at tellus pharetra, interdum augue vitae, finibus mi.",
+      "RSVP at Eventbrite"
+    )(class="update-news" href="news.html")
+    +update(
       "News",
       "February 5, 2021",
       "Listen to When We Were Patched at Escape Pod",
-      "I'm honored to have my short story When We Were Patched available on audio over at Esacpe Pod."
+      "I'm honored to have my short story When We Were Patched available on audio over at Esacpe Pod.",
+      "Read more"
     )(class="update-news" href="news.html")
+    +update(
+      "News",
+      "February 5, 2021",
+      "Listen to When We Were Patched at Escape Pod",
+      "I'm honored to have my short story When We Were Patched available on audio over at Esacpe Pod.",
+      "Read more"
+    )(class="update-news" href="news.html")    
     a.cta 
       span More news
       img(src="/images/arrow-right.svg")

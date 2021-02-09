@@ -10,16 +10,20 @@
   cursor: pointer;
 }
 
+a {
+  color: white;
+
+}
 
 .cta {
   border: 1px solid white;
-  border-radius: 6px;
+  border-radius: 36px;
   color: white;
   width: fit-content;
   padding: 12px 16px;
   display: flex;
   align-items: center;
-  
+
   svg path {
     fill: #fff;
   }

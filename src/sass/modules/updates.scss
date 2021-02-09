@@ -8,7 +8,6 @@
   }
 
   .cta {
-    align-self: flex-end;
     margin-top: 24px;
   }
 }
@@ -17,11 +16,16 @@
   color: #fff;
   display: flex;
   flex-direction: column;
+
+  + .update {
+    margin-top: 56px;
+  }
+
 }
 
 
 .update-type {
-  background: white;
+  background: $gold;
   color: black;
   width: fit-content;
   text-transform: uppercase;
@@ -45,7 +49,7 @@
 
 .update-body {
   font-size: 18px;
-  line-height: 1.4;
+  line-height: 1.5;
   margin-top: 12px;
 }
 

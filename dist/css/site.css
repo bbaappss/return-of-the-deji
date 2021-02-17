@@ -1226,6 +1226,9 @@ footer.footer {
     font-size: 34px;
     font-weight: 800;
     line-height: 1.4; }
+    @media (min-width: 768px) {
+      .homepage-hero .headline {
+        font-size: 48px; } }
     @media (min-width: 1024px) {
       .homepage-hero .headline {
         padding: 0; } }
@@ -1289,10 +1292,13 @@ footer.footer {
   background-image: url("/images/Deji 2021 Glamor Photo -optimized.jpeg");
   background-size: 170%;
   background-position: 0 top; }
+  @media (min-width: 768px) {
+    .section-transition.bgimage {
+      background-position: 0% 30%; } }
   @media (min-width: 1024px) {
     .section-transition.bgimage {
-      background-size: 200%;
-      background-position: 40% top; } }
+      background-size: 150%;
+      background-position: 0% 30%; } }
 
 .gradient {
   background: linear-gradient(0deg, black 0%, rgba(151, 102, 78, 0) 65%, rgba(151, 102, 78, 0) 100%); }

@@ -24,6 +24,11 @@
     font-size: 34px;
     font-weight: 800;
     line-height: 1.4;
+
+    @media (min-width: 768px) {
+      font-size: 48px;
+    }
+
     @media (min-width: 1024px) {
       padding: 0;
     }

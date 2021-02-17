@@ -58,6 +58,10 @@ html:not([data-scroll="0"]) .menu-open .logo-in-navigation {
   z-index: 200;
   position: fixed;
 
+  @media (min-width: 1024px) {
+    background: $green;
+  }
+
   .burger-and-fries {
     display: flex;
     align-items: center;

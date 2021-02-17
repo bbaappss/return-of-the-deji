@@ -7,4 +7,8 @@
 
   background: $green;
   opacity: 0.3;
+
+  @media (min-width: 1024px) {
+    opacity: 0;
+  }
 }

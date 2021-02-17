@@ -949,6 +949,9 @@ html:not([data-scroll="0"]) .menu-open .logo-in-navigation {
   width: 100%;
   z-index: 200;
   position: fixed; }
+  @media (min-width: 1024px) {
+    .burger-and-fries-container {
+      background: #4c5f57; } }
   .burger-and-fries-container .burger-and-fries {
     display: flex;
     align-items: center; }
@@ -1064,6 +1067,9 @@ body.modal-open {
   height: 100%;
   background: #4c5f57;
   opacity: 0.3; }
+  @media (min-width: 1024px) {
+    .color-overlay {
+      opacity: 0; } }
 
 .section.featured-in {
   padding-top: 36px;

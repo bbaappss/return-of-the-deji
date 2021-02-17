@@ -4,6 +4,10 @@
   width: 100%;
   z-index: -1;
 
+  @media (min-width: 1024px) {
+    background: $tan;
+  }
+
   > * {
     height: 100vh;
     position: absolute;
@@ -27,6 +31,9 @@
   @media (min-width: 1024px) {
     background-size: 150%;
     background-position: 0% 30%;
+    width: 50%;
+    right: 0;
+    left: inherit;
   }
 }
 
@@ -37,6 +44,10 @@
     rgba(151, 102, 78, 0) 65%,
     rgba(151, 102, 78, 0) 100%
   );
+
+  @media (min-width: 1024px) {
+    opacity: 0.3;
+  }
 }
 
 .section-transition.dark {

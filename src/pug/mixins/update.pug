@@ -1,5 +1,5 @@
 mixin update(updateType, date, title, body, clickThroughText)
-    a.update(class!=attributes.class href=attributes.href)
+    a.update(class!=attributes.class href=attributes.href target!=attributes.target)
         span.update-type(class=attributes.class)=updateType
         if date
             span.update-date=date

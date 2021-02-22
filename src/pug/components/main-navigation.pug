@@ -1,0 +1,16 @@
+.fries.menu-hide
+  .menu-on-small
+    include ../modules/menu.pug
+.sticky-header
+  #navigation.burger-and-fries-container
+    a(href="/" class="logo-in-navigation relative")
+      span Return of the Deji
+    .burger-and-fries
+      <button class="hamburger hamburger--squeeze js-hamburger" type="button">
+        <div class="hamburger-bg"></div>
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
+      </button> 
+      .menu-on-large
+        include ../modules/menu.pug

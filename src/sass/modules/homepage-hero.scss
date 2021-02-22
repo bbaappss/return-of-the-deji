@@ -12,8 +12,21 @@
   @media (min-width: 1024px) {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
-    padding: 100px 64px;
+    align-items: flex-end;
+    padding: 100px 64px 64px;
+  }
+  
+
+
+  @media (min-width: 1024px) {
+  .headline,
+  .update-container {
+      max-width: 400px;
+  }
+
+    .update-container {
+      padding: 0;
+    }
   }
 
   .headline {
@@ -27,7 +40,7 @@
     }
 
     @media (min-width: 1024px) {
-      padding: 0 36px 0 0;
+      padding: 0 0 0 0;
       font-size: 40px;
       text-shadow: 3px 4px 0px $dark;
       width: 50%;
@@ -39,7 +52,9 @@
 
     @media (min-width: 768px) {
       margin-top: 48px;
-      max-width: 400px;
+    }
+    @media (min-width: 1024px) {
+      margin-bottom: 0px;
     }
   }
 }

@@ -1,4 +1,6 @@
 .the-latest {
+  background: $green;
+
   h2 {
     margin-top: 32px;
   }
@@ -14,6 +16,8 @@
 
 @media (min-width: 1024px) {
   .the-latest {
+    background: transparent;
+
     .the-latest-updates-container {
       .update-container {
         &:not(:first-of-type) {

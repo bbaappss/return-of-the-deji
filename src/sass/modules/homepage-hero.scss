@@ -7,22 +7,19 @@
   z-index: 1;
   height: 100vh;
   overflow: hidden;
-  @extend .padding-on-large-screens;
 
   @media (min-width: 1024px) {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
     padding: 100px 64px 64px;
+    width: 50%;
+    margin-left: auto;
   }
   
 
 
   @media (min-width: 1024px) {
-  .headline,
-  .update-container {
-      max-width: 400px;
-  }
 
     .update-container {
       padding: 0;
@@ -43,7 +40,6 @@
       padding: 0 0 0 0;
       font-size: 40px;
       text-shadow: 3px 4px 0px $dark;
-      width: 50%;
     }
   }
 

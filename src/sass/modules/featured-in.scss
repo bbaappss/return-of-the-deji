@@ -17,3 +17,11 @@
     margin: 0 auto;
   }
 }
+
+@media (min-width: 1024px) {
+  .section.featured-in {
+    width: 50%;
+    margin-left: auto;
+    padding: 100px 64px 64px;
+  }
+}

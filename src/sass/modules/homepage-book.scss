@@ -71,13 +71,17 @@
 
 @media (min-width: 1024px) {
   .homepage-book {
-    flex-direction: row-reverse;
+    flex-direction: row;
+
+    h2 {
+      margin-left: 64px;
+    }
 
     .book-container-left {
       width: 50%;
+      justify-content: center;
     }
     .book-container-right {
-      margin-top: -80px;
       width: 50%;
     }
     .book-cover {

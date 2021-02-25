@@ -67,3 +67,20 @@ a {
     border-radius: 6px;
   }
 }
+
+.homepage-section-container {
+  .section {
+    padding: 24px;
+  }
+
+  @media (min-width: 1024px) {
+    .section {
+      padding: 0;
+    }
+    
+    display: flex;
+    margin-left: auto;
+    padding: 100px 64px 64px;
+    width: 50%;
+  }
+}

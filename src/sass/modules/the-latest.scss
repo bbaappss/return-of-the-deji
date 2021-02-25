@@ -14,18 +14,10 @@
 
 @media (min-width: 1024px) {
   .the-latest {
-    padding: 64px;
     .the-latest-updates-container {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: 1fr 1fr;
-      grid-gap: 100px;
-      justify-items: start;
-      align-items: start;
-
       .update-container {
         &:not(:first-of-type) {
-          margin-top: inherit;
+          margin-top: 100px;
         }
       }
     }

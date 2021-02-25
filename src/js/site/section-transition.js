@@ -2,7 +2,7 @@ const sectionTL = gsap.timeline( {
     scrollTrigger: {
       trigger: ".section2",
       start: "top bottom",
-      end: "center bottom",
+      end: "bottom bottom",
       scrub: true,
       toggleActions: "play reverse play reverse",
     }
@@ -10,9 +10,9 @@ const sectionTL = gsap.timeline( {
   
 sectionTL
     .to(
-      '.section-transition.green', 
+      '.section-transition.bgimage', 
     { 
-        opacity: 1, 
-        duration: 1 
-    }, ".section2"
+      backgroundPosition: "10% 50%",
+      duration: 1 
+    }, "section2"
 );

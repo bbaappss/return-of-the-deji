@@ -10,57 +10,58 @@ block content
     .gradient
     .section-transition.green
   include ../modules/homepage-hero.pug
-  .section.section2.the-latest
-    h2.section-headline.h2.blue The Latest
-    .the-latest-updates-container
-      .update-container
-        +update(
-          "News",
-          "",
-          "PANEL AT THE NEBULA AWARDS ON MAY 31",
-          "I’ll be speaking at the 2020 Nebula Awards with a panel of great authors.",
-          "Read more"
-        )(class="update-news" href="news.html")
-        a.cta 
-          span More news
-          img(src="/images/arrow-right.svg")
-      .update-container
-        +update(
-          "Short Fiction",
-          "",
-          "We Are the Olfanauts",
-          "This near-future scifi story is about a young Kenyan man who is trying to make at the hottest new tech company, which specializes in scented social media.",
-          "Read more"
-        )(class="update-short-fiction" href="short-fiction.html")    
-        a.cta 
-          span More short fiction
-          img(src="/images/arrow-right.svg")
-      .update-container
-        +update(
-          "Article",
-          "",
-          "Moving Towards Science Fiction Thinking",
-          "Tor.com: Lessons from my work fighting for human rights online and how we can empower people by using the tools of science fiction, such as world building.",
-          "Read more"
-        )(class="update-article" href="article.html")    
-        a.cta 
-          span More articles
-          img(src="/images/arrow-right.svg")
-      .update-container
-        +update(
-          "Interview",
-          "",
-          "Yale News 2017",
-          "On fiction, Nigerians in Space, and After the Flare",
-          "Read more"
-        )(class="update-interview" href="interview.html")
-        a.cta 
-          span More interviews
-          img(src="/images/arrow-right.svg")
+  .homepage-section-container
+    .section.section2.the-latest
+      h2.section-headline.h2.blue The Latest
+      .the-latest-updates-container
+        .update-container
+          +update(
+            "News",
+            "",
+            "PANEL AT THE NEBULA AWARDS ON MAY 31",
+            "I’ll be speaking at the 2020 Nebula Awards with a panel of great authors.",
+            "Read more"
+          )(class="update-news" href="news.html")
+          a.cta 
+            span More news
+            img(src="/images/arrow-right.svg")
+        .update-container
+          +update(
+            "Short Fiction",
+            "",
+            "We Are the Olfanauts",
+            "This near-future scifi story is about a young Kenyan man who is trying to make at the hottest new tech company, which specializes in scented social media.",
+            "Read more"
+          )(class="update-short-fiction" href="short-fiction.html")    
+          a.cta 
+            span More short fiction
+            img(src="/images/arrow-right.svg")
+        .update-container
+          +update(
+            "Article",
+            "",
+            "Moving Towards Science Fiction Thinking",
+            "Tor.com: Lessons from my work fighting for human rights online and how we can empower people by using the tools of science fiction, such as world building.",
+            "Read more"
+          )(class="update-article" href="article.html")    
+          a.cta 
+            span More articles
+            img(src="/images/arrow-right.svg")
+        .update-container
+          +update(
+            "Interview",
+            "",
+            "Yale News 2017",
+            "On fiction, Nigerians in Space, and After the Flare",
+            "Read more"
+          )(class="update-interview" href="interview.html")
+          a.cta 
+            span More interviews
+            img(src="/images/arrow-right.svg")
   .section.section3.books
-    h2.section-headline.h2.blue Latest Book
     .homepage-book
       .book-container-right
+        h2.section-headline.h2.blue Latest Book
         span.book-title After The Flare
         img.book-cover(src="/images/300_Olukotun_AftertheFlare_Cover.jpeg")
         span.book-award Winner of the 2018 Philip K. Dick <br/> special citation award

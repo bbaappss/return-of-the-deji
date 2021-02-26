@@ -62,11 +62,13 @@
   margin-top: 12px;
 }
 
+h1.update-title,
 .update-title {
   font-size: 26px;
   font-weight: 500;
   line-height: 1.2;
   margin-top: 24px;
+  text-transform: capitalize;
   @media (min-width: 1024px) {
     font-size: 32px;
   }

@@ -1,0 +1,36 @@
+extends ../template.pug
+
+include ../mixins/update.pug
+
+block content
+  include ../components/main-navigation.pug
+  .inner-page-section-container.update-page
+    .update
+      span.update-type.update-news News
+      h1.update-title Panel at the Nebula Awards on May 31
+      span.update-date Posted on March 31, 2020
+      .update-body 
+        .video-container
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/NxX3tQC--OU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        p I’ll be speaking at the 2020 Nebula Awards with a panel of great authors. The Nebulas are a preeminent science fiction event focused on literature — unlike many comicons, which gravitate towards film and television. The panel topic is “Who and What I am”, which will explore challenging questions around identity and place in science fiction.
+        p Like many of you, I would have preferred to be at the event in person, but the coronavirus pandemic calls for creative — and safe solutions. The Nebulas responded to the outbreak by offering to refund all attendees and then vastly reduced its programming. I’m looking forward to joining in this experiment with my fellow panelists on Sunday, May 31.
+        a.cta(href="google.com" target="_blank") Click here for panel details.
+    .more-updates-container
+      h2.h2.white More news
+      +update(
+        "",
+        "May 26, 2020",
+        "Listen to When We Were Patched at Escape Pod",
+        "",
+        ""
+      )(class="update-news" href=".html")
+      +update(
+        "",
+        "July 7, 2019",
+        "Short story on nanosatellites in mit technology review",
+        "",
+        ""
+      )(class="update-news" href=".html")
+      a.cta 
+        span View all news
+        img(src="/images/arrow-right.svg")

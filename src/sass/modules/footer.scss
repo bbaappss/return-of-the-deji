@@ -5,6 +5,10 @@ footer.footer {
   flex-direction: column;
   padding: 48px 24px 24px;
 
+  .get-and-stay-connected {
+    margin-top: 48px;
+  }
+
   .sign-off-container {
     margin-top: 48px;
     display: flex;
@@ -28,8 +32,10 @@ footer.footer {
 
 @media (min-width: 1024px) {
   footer.footer {
+    padding: 4vw 8vw;
     .get-and-stay-connected {
       display: flex;
+      margin-top: 80px;
 
       > * {
         width: 50%;

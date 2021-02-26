@@ -1303,7 +1303,7 @@ footer.footer {
     z-index: -100; }
 
 .newsletter-container {
-  margin-top: 128px;
+  margin-top: 48px;
   background: #bde2db; }
   @media (min-width: 1024px) {
     .newsletter-container {

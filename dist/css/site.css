@@ -871,7 +871,6 @@ p {
   background: #e4dcbe;
   padding-top: 64px;
   padding-bottom: 32px;
-  margin-top: 36px;
   display: flex;
   flex-direction: column; }
   .section.books .cta {
@@ -1056,6 +1055,7 @@ body.modal-open {
       opacity: 0; } }
 
 .section.featured-in {
+  background: #4c5f57;
   padding-top: 36px;
   padding-bottom: 36px; }
   .section.featured-in h2 {
@@ -1070,11 +1070,26 @@ body.modal-open {
     display: block;
     margin: 0 auto; }
 
+.bg-image {
+  display: none; }
+
 @media (min-width: 1024px) {
   .section.featured-in {
-    width: 50%;
-    margin-left: auto;
-    padding: 100px 64px 64px; } }
+    position: relative; }
+    .section.featured-in .featured-content {
+      width: 50%;
+      padding: 24px 32px 64px; }
+    .section.featured-in .bg-image {
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      background: gray;
+      width: 50%;
+      height: 100%;
+      background-image: url("/images/sonos-sia-uap-00825-scaled.jpg");
+      background-position: 60% center;
+      background-size: cover; } }
 
 footer.footer {
   background: #bde2db;
@@ -1404,8 +1419,8 @@ footer.footer {
   margin-top: 14px; }
   @media (min-width: 1024px) {
     .read-more {
-      padding: 20px 28px;
-      font-size: 24px; } }
+      padding: 16px 24px;
+      font-size: 20px; } }
 
 .insight-container a.update {
   margin-top: 64px; }

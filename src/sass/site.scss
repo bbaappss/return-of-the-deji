@@ -103,3 +103,22 @@ a {
   width: 100%;
   height: 100%;
 }
+
+.mc-field-group {
+  margin-top: 16px;
+}
+
+#mc_embed_signup form {
+  padding: 0 !important;
+}
+
+#mc_embed_signup .button {
+  background: $green !important;
+  box-shadow: inherit;
+}
+
+#mc_embed_signup #mce-success-response {
+  color: $green !important;
+  padding: 0;
+  margin: 0;
+}

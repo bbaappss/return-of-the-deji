@@ -14,11 +14,12 @@ footer.footer
     #newsletter.newsletter-container
       h2.section-headline.h2 Stay connected
       h3 Use the form below to sign up for my newsletter.
-      .input-container
-        label Email-address
-        .input
-          input(type="text" placeholder="you@yourhost.com")
-        button Subscribe
+      include ../modules/newsletter.pug
+      //- .input-container
+      //-   label Email-address
+      //-   .input
+      //-     input(type="text" placeholder="you@yourhost.com")
+      //-   button Subscribe
   .sign-off-container
     span.copyright Copyright © 2021 All Rights Reserved
 script(src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js")

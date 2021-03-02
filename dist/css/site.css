@@ -1356,14 +1356,14 @@ footer.footer {
 .section-transition.bgimage {
   background-image: url("/images/Deji 2021 Glamor Photo -optimized.jpeg");
   background-size: 170%;
-  background-position: 0 top; }
+  background-position: 0 0; }
   @media (min-width: 768px) {
     .section-transition.bgimage {
-      background-position: 0% 25%; } }
+      background-position: 0 25%; } }
   @media (min-width: 1024px) {
     .section-transition.bgimage {
       background-size: 150%;
-      background-position: 10% 30%;
+      background-position: 0 30%;
       width: 50%;
       left: 0; } }
   @media (min-width: 1024px) {

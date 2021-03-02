@@ -862,6 +862,10 @@ p {
 .blue {
   color: #bde2db; }
 
+@media (min-width: 1440px) {
+  h1 {
+    font-size: 4vw; } }
+
 @media (min-width: 1280px) {
   .padding-on-large-screens {
     padding-left: 8vw !important;
@@ -871,6 +875,9 @@ p {
   background: #4c5f57;
   padding-bottom: 96px;
   padding-top: 96px; }
+  @media (min-width: 1024px) {
+    .homepage-section-container .section.bio {
+      padding: 64px; } }
   .homepage-section-container .section.bio p {
     color: white;
     font-size: 24px;
@@ -1072,11 +1079,7 @@ body.modal-open {
   padding-bottom: 36px; }
   .section.featured-in h2 {
     font-weight: bold;
-    line-height: 1.4;
-    font-size: 24px; }
-    @media (min-width: 1024px) {
-      .section.featured-in h2 {
-        font-size: 48px; } }
+    line-height: 1.4; }
   .section.featured-in img {
     padding-top: 24px;
     display: block;
@@ -1363,6 +1366,9 @@ footer.footer {
       background-position: 10% 30%;
       width: 50%;
       left: 0; } }
+  @media (min-width: 1024px) {
+    .section-transition.bgimage {
+      background-size: 130%; } }
 
 .gradient {
   background: linear-gradient(0deg, black 0%, rgba(151, 102, 78, 0) 65%, rgba(151, 102, 78, 0) 100%); }
@@ -1382,9 +1388,12 @@ footer.footer {
   padding: 0 24px; }
   .section h2 {
     height: inherit; }
-  @media (min-width: 1024px) {
-    .section h2 {
-      font-size: 64px; } }
+    @media (min-width: 1024px) {
+      .section h2 {
+        font-size: 64px; } }
+    @media (min-width: 1440px) {
+      .section h2 {
+        font-size: 3.5vw; } }
 
 .the-latest {
   background: #4c5f57; }
@@ -1485,6 +1494,10 @@ h1.update-title,
     h1.update-title,
     .update-title {
       font-size: 32px; } }
+  @media (min-width: 1440px) {
+    h1.update-title,
+    .update-title {
+      font-size: 3vw; } }
 
 .update-body {
   font-size: 18px;
@@ -1507,6 +1520,12 @@ h1.update-title,
 
 .insight-container a.update {
   margin-top: 64px; }
+
+@media (min-width: 1440px) {
+  .homepage-book .book-description {
+    font-size: 2vw; }
+  .homepage-book .quote-body {
+    font-size: 1.3vw; } }
 
 .does-not-work:hover {
   cursor: pointer; }
@@ -1562,7 +1581,7 @@ a {
   .homepage-section-container {
     display: flex;
     margin-left: auto;
-    padding: 100px 64px 64px;
+    padding: 100px 0px 0px;
     width: 50%; }
     .homepage-section-container .section {
       padding: 0; } }
@@ -1575,7 +1594,9 @@ a {
   height: 0;
   overflow: hidden; }
 
-.video-container iframe, .video-container object, .video-container embed {
+.video-container iframe,
+.video-container object,
+.video-container embed {
   position: absolute;
   top: 0;
   left: 0;

@@ -19,3 +19,9 @@ p {
 .blue {
   color: $blue;
 }
+
+h1 {
+  @media (min-width: 1440px) {
+    font-size: 4vw;
+  }
+}

@@ -12,7 +12,7 @@ sectionTL
     .to(
       '.section-transition.bgimage', 
     { 
-      backgroundPosition: "10% 50%",
+      backgroundPosition: "0 -200px",
       duration: 1 
     }, "section2"
 );

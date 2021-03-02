@@ -867,6 +867,19 @@ p {
     padding-left: 8vw !important;
     padding-right: 8vw !important; } }
 
+.homepage-section-container .section.bio {
+  background: #4c5f57;
+  padding-bottom: 96px;
+  padding-top: 96px; }
+  .homepage-section-container .section.bio p {
+    color: white;
+    font-size: 24px;
+    font-weight: bold; }
+    .homepage-section-container .section.bio p + p {
+      margin-top: 32px;
+      font-size: 20px;
+      font-weight: normal; }
+
 .section.books {
   background: #e4dcbe;
   padding-top: 64px;
@@ -902,7 +915,6 @@ html:not([data-scroll="0"]) .hamburger-bg {
 
 .not-home .menu-open .logo-in-navigation,
 html:not([data-scroll="0"]) .menu-open .logo-in-navigation {
-  color: #4c5f57;
   opacity: 1; }
 
 .hamburger {
@@ -963,7 +975,7 @@ body.modal-open {
   overflow-y: hidden !important; }
 
 .menu-hide {
-  background: #cdcdcd;
+  background: #4c5f57;
   height: 100vh;
   opacity: 0;
   right: -100%;
@@ -1187,13 +1199,15 @@ footer.footer {
   .homepage-book .quote-author {
     margin: 18px 0 0; }
   .homepage-book .available-from-container {
+    border: dashed 5px #4c5f57;
+    padding: 36px;
     margin-top: 36px;
     display: flex;
     flex-direction: column; }
     .homepage-book .available-from-container .available-from {
-      font-size: 20px;
-      font-weight: 500; }
+      font-size: 20px; }
     .homepage-book .available-from-container a {
+      font-weight: 600;
       color: black;
       display: block;
       margin: 12px 0 0;

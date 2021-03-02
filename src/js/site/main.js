@@ -8,6 +8,13 @@ $(window).on("load", function () {
     $("body").toggleClass("modal-open");
     $("body").toggleClass("menu-open");
   })
+  
+  $(".fries a").click(function() {
+    $(this).toggleClass("is-active");
+    $(".fries").toggleClass("show");
+    $("body").toggleClass("modal-open");
+    $("body").toggleClass("menu-open");
+  })
 
   $(".does-not-work").click(function(e) {
     alert("This does not work yet");

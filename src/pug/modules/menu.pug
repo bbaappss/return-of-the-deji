@@ -1,8 +1,9 @@
 
 - var currentUrl = page
 .main-nav
-  a.does-not-work() About Deji
-  a.does-not-work(class={active: currentUrl === 'about'}) News
-  a.does-not-work(class={active: currentUrl === 'activities'}) Insights
-  a.does-not-work(class={active: currentUrl === 'faq'}) Books
-  a.does-not-work(class={active: currentUrl === 'contact'}) Contact
+  a(href="#bio") About Deji
+  a(href="#books" class={active: currentUrl === '#about'}) After The Flare
+  a(href="#features" class={active: currentUrl === 'activities'}) Features
+  a(href="#inquiries" class={active: currentUrl === 'faq'}) Inquiries
+  a(href="#connect" class={active: currentUrl === 'connect'}) Connect
+  a(href="#newsletter" class={active: currentUrl === 'contact'}) Newsletter  

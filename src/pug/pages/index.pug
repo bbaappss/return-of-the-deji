@@ -10,54 +10,13 @@ block content
     .gradient
   include ../modules/homepage-hero.pug
   .homepage-section-container
-    .section.section2.the-latest
-      h2.section-headline.h2.blue The Latest
-      .the-latest-updates-container
-        .update-container
-          +update(
-            "News",
-            "",
-            "PANEL AT THE NEBULA AWARDS ON MAY 31",
-            "I’ll be speaking at the 2020 Nebula Awards with a panel of great authors.",
-            "Read more"
-          )(class="update-news" href="nebula.html")
-          a.cta 
-            span More news
-            img(src="/images/arrow-right.svg")
-        .update-container
-          +update(
-            "Short Fiction",
-            "",
-            "We Are the Olfanauts",
-            "This near-future scifi story is about a young Kenyan man who is trying to make at the hottest new tech company, which specializes in scented social media.",
-            "Read more"
-          )(class="update-short-fiction" href="short-fiction.html")    
-          a.cta 
-            span More short fiction
-            img(src="/images/arrow-right.svg")
-        .update-container
-          +update(
-            "Article",
-            "",
-            "Moving Towards Science Fiction Thinking",
-            "Tor.com: Lessons from my work fighting for human rights online and how we can empower people by using the tools of science fiction, such as world building.",
-            "Read more"
-          )(class="update-article" href="article.html")    
-          a.cta 
-            span More articles
-            img(src="/images/arrow-right.svg")
-        .update-container
-          +update(
-            "Interview",
-            "",
-            "Yale News 2017",
-            "On fiction, Nigerians in Space, and After the Flare",
-            "Read more"
-          )(class="update-interview" href="interview.html")
-          a.cta 
-            span More interviews
-            img(src="/images/arrow-right.svg")
-  .section.section3.books
+    #bio.section.section2.bio
+      h2.section-headline.h2.blue Biography
+      p DEJI BRYCE OLUKOTUN is the author of two novels and his fiction has appeared in five different book collections. 
+      p His novel After the Flare won the 2018 Philip K. Dick special citation, and was chosen as one of the best books of 2017 by The Guardian, The Washington Post, Syfy.com, Tor.com, Kirkus Reviews, among others. 
+      p His short story Between the Dark and the Dark, published in Lightspeed, was selected by editor Diana Gabaldon for Best American Science Fiction and Fantasy 2020 (Houghton Mifflin Harcourt). 
+      p He currently works for the audio technology company Sonos and he is a Future Tense Fellow at New America.
+  #books.section.section3.books
     .homepage-book
       .book-container-right
         h2.section-headline.h2.blue Latest Book
@@ -70,12 +29,9 @@ block content
         span.quote-author —Kirkus Reviews
         .available-from-container
           span.available-from Available for purchase from
-          a(href="local-indie") Your local Indie Book store
-          a(href="amazon") Amazon
-    a.cta 
-      span More books
-      img(src="/images/arrow-right-black.svg")
-  .section.section4.featured-in
+          a(href="https://www.indiebound.org/book/9781944700188" target="_blank") Your local Indie Book store
+          a(href="https://www.amazon.com/After-Flare-Nigerians-Space-Olukotun/dp/1944700188/ref=sr_1_1?s=books&ie=UTF8&qid=1483902091&sr=1-1&keywords=%22after+the+flare%22+olukotun" target="_blank") Amazon
+  #features.section.section4.featured-in
     .featured-content
       h2.section-headline.h2.blue Deji and his work have been featured in
       .logo-grid

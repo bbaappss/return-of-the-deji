@@ -1008,12 +1008,6 @@ body.modal-open {
       text-align: center;
       padding: 24px 18px;
       font-size: 24px; }
-  .menu-on-small .login {
-    width: fit-content;
-    display: block;
-    margin: 24px auto 0;
-    font-size: 24px;
-    padding: 24px 64px; }
 
 .menu-on-large {
   display: flex;
@@ -1177,6 +1171,7 @@ footer.footer {
     border-bottom: 2px solid white;
     color: white;
     width: fit-content;
+    width: -moz-fit-content;
     margin-bottom: 24px; }
 
 .social-media-grid {
@@ -1210,6 +1205,7 @@ footer.footer {
     line-height: 1.2;
     font-weight: bold;
     width: fit-content;
+    width: -moz-fit-content;
     margin: 24px auto 0; }
   .homepage-book .book-description {
     font-size: 19px;
@@ -1484,6 +1480,7 @@ footer.footer {
 .update-type {
   color: black;
   width: fit-content;
+  width: -moz-fit-content;
   text-transform: uppercase;
   padding: 6px 8px 4px;
   font-size: 13px;
@@ -1558,6 +1555,7 @@ a {
 .cta {
   border-bottom: 1px solid white;
   color: white;
+  width: -moz-fit-content;
   width: fit-content;
   padding: 6px 0;
   display: flex;
@@ -1590,6 +1588,7 @@ a {
     border: 0;
     background: white;
     color: #4c5f57;
+    width: -moz-fit-content;
     width: fit-content;
     font-weight: bold;
     font-size: 24px;

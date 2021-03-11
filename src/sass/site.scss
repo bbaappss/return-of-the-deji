@@ -17,6 +17,7 @@ a {
 .cta {
   border-bottom: 1px solid white;
   color: white;
+  width: -moz-fit-content;
   width: fit-content;
   padding: 6px 0;
   display: flex;
@@ -60,6 +61,7 @@ a {
     border: 0;
     background: white;
     color: $green;
+    width: -moz-fit-content;
     width: fit-content;
     font-weight: bold;
     font-size: 24px;

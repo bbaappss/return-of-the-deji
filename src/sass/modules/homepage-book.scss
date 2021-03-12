@@ -19,6 +19,9 @@
     width: fit-content;
     width: -moz-fit-content;
     margin: 24px auto 0;
+    @media (min-width: 1024px) {
+      margin: 0;
+    }
   }
 
   .book-description {

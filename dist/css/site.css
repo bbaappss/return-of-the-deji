@@ -1271,6 +1271,9 @@ footer.footer {
     width: fit-content;
     width: -moz-fit-content;
     margin: 24px auto 0; }
+    @media (min-width: 1024px) {
+      .homepage-book .book-award {
+        margin: 0; } }
   .homepage-book .book-description {
     font-size: 19px;
     line-height: 1.4;

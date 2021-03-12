@@ -1130,6 +1130,11 @@ a.collection-item {
 .section.inner-page-section-container .exploration-post .cta {
   font-size: 24px; }
 
+@media (min-width: 1024px) {
+  .section.inner-page-section-container .exploration-post {
+    max-width: 1024px;
+    margin: 0 auto; } }
+
 .section.featured-in {
   background: #4c5f57;
   padding-top: 36px;

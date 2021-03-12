@@ -20,6 +20,10 @@ p {
   color: $blue;
 }
 
+.white {
+  color: white;
+}
+
 h1 {
   @media (min-width: 1440px) {
     font-size: 4vw;

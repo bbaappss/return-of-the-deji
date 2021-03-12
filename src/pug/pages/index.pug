@@ -1,6 +1,7 @@
 extends ../template.pug
 
 include ../mixins/update.pug
+include ../mixins/collection.pug
 
 block content
   include ../components/main-navigation.pug
@@ -17,11 +18,45 @@ block content
       p His short story Between the Dark and the Dark, published in Lightspeed, was selected by editor Diana Gabaldon for Best American Science Fiction and Fantasy 2020 (Houghton Mifflin Harcourt). 
       p He currently works for the audio technology company Sonos and he is a Future Tense Fellow at New America.
   #books.section.section3.books
+    .collections 
+      h2.section-headline.h2.blue Collections
+      p Deji is proud to have his work included in the following collections.
+      hr 
+      +collection(
+          "The Best American Science Fiction and Fantasy 2020",
+          "/images/best-american.jpg",
+          "https://www.amazon.com/Best-American-Science-Fiction-Fantasy/dp/1328613100"
+        )
+      +collection(
+          "Welcome to Dystopia: 45 Visions of What Lies Ahead",
+          "/images/dystopia.jpg",
+          "https://www.amazon.com/Welcome-Dystopia-Visions-What-Ahead/dp/1949017060"
+        )
+      +collection(
+          "Future Tense Fiction: Stories of Tomorrow",
+          "/images/Future-Tense-Fiction-Book-Cover.jpg",
+          "https://www.amazon.com/Future-Tense-Fiction-Stories-Tomorrow/dp/1944700951"
+        )
+      +collection(
+          "Invaders: 22 Tales from the Outer Limits of Literature",
+          "/images/Invadersnewwebsite-800x1200.jpg",
+          "https://www.amazon.com/Invaders-Tales-Outer-Limits-Literature/dp/1616962100"
+        )
+      +collection(
+          "Visions, Ventures, Escape Velocities: A Collection of Space Futures",
+          "/images/Space Futures_Smaller.jpg",
+          "https://csi.asu.edu/books/vvev/"
+        )
+      +collection(
+          "Watchlist: 32 Stories by Persons of Interest",
+          "/images/watchlist2.jpg",
+          "https://www.amazon.com/Watchlist-32-Stories-Persons-Interest/dp/1936787415"
+        )
     .homepage-book
       .book-container-right
-        h2.section-headline.h2.blue Latest Book
+        h2.section-headline.h2.blue Latest Novel
         span.book-title After The Flare
-        img.book-cover(src="/images/300_Olukotun_AftertheFlare_Cover.jpeg")
+        img.book-cover(src="/images/after-the-flare.jpg")
         span.book-award Winner of the 2018 Philip K. Dick <br/> special citation award
       .book-container-left
         span.book-description After the Flare is a futuristic thriller published by Unnamed Press.

@@ -1,0 +1,20 @@
+.collections {
+    margin-bottom: 36px;
+
+    h2 {
+      margin-bottom: 0;
+    }
+    p {
+      font-size: 20px;
+      margin-top: 12px;
+    }
+}
+
+a.collection-item {
+    display: flex;
+    flex-direction: column;
+    color: black; text-decoration: none;
+    + .collection-item {
+        margin-top: 48px;
+    }
+}

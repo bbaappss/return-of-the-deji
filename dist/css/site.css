@@ -862,6 +862,9 @@ p {
 .blue {
   color: #bde2db; }
 
+.white {
+  color: white; }
+
 @media (min-width: 1440px) {
   h1 {
     font-size: 4vw; } }
@@ -975,8 +978,11 @@ html:not([data-scroll="0"]) .menu-open .logo-in-navigation {
   transition: 1s;
   text-decoration: none;
   color: white;
-  font-size: 25px;
+  font-size: 20px;
   font-weight: bold; }
+  @media (min-width: 1280px) {
+    .logo-in-navigation {
+      font-size: 24px; } }
 
 body.modal-open {
   overflow-y: hidden !important; }
@@ -1055,6 +1061,22 @@ body.modal-open {
   .burger-and-fries-container {
     padding: 0 12vw; } }
 
+.collections {
+  margin-bottom: 36px; }
+  .collections h2 {
+    margin-bottom: 0; }
+  .collections p {
+    font-size: 20px;
+    margin-top: 12px; }
+
+a.collection-item {
+  display: flex;
+  flex-direction: column;
+  color: black;
+  text-decoration: none; }
+  a.collection-item + .collection-item {
+    margin-top: 48px; }
+
 .color-overlay {
   position: absolute;
   top: 0;
@@ -1066,6 +1088,17 @@ body.modal-open {
   @media (min-width: 1024px) {
     .color-overlay {
       opacity: 0; } }
+
+.section.inner-page-section-container .exploration-post h1 {
+  font-size: 24px;
+  line-height: 1.5; }
+
+.section.inner-page-section-container .exploration-post p {
+  margin-top: 16px;
+  font-size: 20px; }
+
+.section.inner-page-section-container .exploration-post .cta {
+  font-size: 24px; }
 
 .section.featured-in {
   background: #4c5f57;
@@ -1184,17 +1217,8 @@ footer.footer {
 
 .homepage-book {
   display: flex;
-  flex-direction: column; }
-  .homepage-book .book-title {
-    text-transform: uppercase;
-    font-weight: 500;
-    text-align: center;
-    letter-spacing: 3px;
-    margin: 24px 0;
-    font-size: 15px; }
-  .homepage-book .book-cover {
-    margin: 0 auto;
-    max-width: 80%; }
+  flex-direction: column;
+  padding-bottom: 24px; }
   .homepage-book .book-award {
     background: #fff;
     color: #1c1c1c;
@@ -1218,20 +1242,18 @@ footer.footer {
     line-height: 1.5; }
   .homepage-book .quote-author {
     margin: 18px 0 0; }
-  .homepage-book .available-from-container {
-    border: dashed 5px #4c5f57;
-    padding: 36px;
-    margin-top: 36px;
-    display: flex;
-    flex-direction: column; }
-    .homepage-book .available-from-container .available-from {
-      font-size: 20px; }
-    .homepage-book .available-from-container a {
-      font-weight: 600;
-      color: black;
-      display: block;
-      margin: 12px 0 0;
-      font-size: 18px; }
+
+.book-title {
+  text-transform: uppercase;
+  font-weight: 500;
+  text-align: center;
+  letter-spacing: 3px;
+  margin: 24px 0;
+  font-size: 15px; }
+
+.book-cover {
+  margin: 0 auto;
+  max-width: 80%; }
 
 .book-container-left,
 .book-container-right {
@@ -1259,7 +1281,7 @@ footer.footer {
   justify-content: space-between;
   padding-top: 60px;
   z-index: 1;
-  height: 100vh;
+  min-height: 100vh;
   overflow: hidden; }
   @media (min-width: 1024px) {
     .homepage-hero {
@@ -1294,11 +1316,22 @@ footer.footer {
       .homepage-hero .update-container {
         margin-bottom: 0px; } }
 
-.inner-page-section-container {
+.section.inner-page-section-container {
   background: #4c5f57;
-  padding-top: 60px; }
-  .inner-page-section-container h1 {
-    font-size: 64px; }
+  padding: 60px 24px; }
+  @media (min-width: 1024px) {
+    .section.inner-page-section-container {
+      padding: 100px 24px; } }
+  .section.inner-page-section-container h1 {
+    font-size: 48px;
+    font-weight: bold; }
+  .section.inner-page-section-container .update-container {
+    margin: 24px 0 0;
+    padding: 0; }
+    @media (min-width: 1024px) {
+      .section.inner-page-section-container .update-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr; } }
 
 .inquiries {
   border: 12px solid white;
@@ -1553,6 +1586,9 @@ h1.update-title,
 a {
   color: white; }
 
+hr {
+  border-bottom: 0; }
+
 .cta {
   border-bottom: 1px solid white;
   color: white;
@@ -1603,7 +1639,7 @@ a {
   .homepage-section-container {
     display: flex;
     margin-left: auto;
-    padding: 100px 0px 0px;
+    padding: 00px 0px 0px;
     width: 50%; }
     .homepage-section-container .section {
       padding: 0; } }

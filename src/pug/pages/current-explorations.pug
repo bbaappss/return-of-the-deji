@@ -1,0 +1,16 @@
+extends ../template.pug
+
+include ../mixins/update.pug
+
+block content
+  include ../components/main-navigation.pug
+  .section.inner-page-section-container
+    h1.blue Current Explorations
+    .update-container
+        +update(
+            "",
+            "March 11, 2021",
+            "Confronting displaced populations in the 21st century",
+            "In collaboration with the Center for Science and the Imagination at Arizona State and the National Renewable Energy Laboratory, I worked with scientists, policy makers, and artists to envision better energy futures.",
+            "Continue reading"
+            )(class="update-event" href="unhcr.html")  

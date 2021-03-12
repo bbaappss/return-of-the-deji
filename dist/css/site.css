@@ -909,7 +909,9 @@ p {
   padding: 36px;
   margin-top: 36px;
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  width: fit-content;
+  width: -moz-fit-content; }
   .available-from-container .available-from {
     font-size: 20px; }
   .available-from-container a {
@@ -1077,7 +1079,8 @@ body.modal-open {
     padding: 0 12vw; } }
 
 .collections {
-  margin-bottom: 72px; }
+  margin-top: 72px;
+  padding-bottom: 72px; }
   .collections h2 {
     margin-bottom: 0; }
   .collections p {
@@ -1254,6 +1257,8 @@ footer.footer {
   display: flex;
   flex-direction: column;
   padding-bottom: 24px; }
+  .homepage-book + .homepage-book {
+    margin-top: 36px; }
   .homepage-book .book-award {
     background: #fff;
     color: #1c1c1c;
@@ -1296,10 +1301,10 @@ footer.footer {
   flex-direction: column; }
 
 @media (min-width: 1024px) {
+  .books-headline {
+    margin-left: 64px; }
   .homepage-book {
     flex-direction: row; }
-    .homepage-book h2 {
-      margin-left: 64px; }
     .homepage-book .book-container-left {
       width: 50%;
       justify-content: center; }

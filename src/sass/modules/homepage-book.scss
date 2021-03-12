@@ -3,6 +3,10 @@
   flex-direction: column;
   padding-bottom: 24px;
 
+  + .homepage-book {
+    margin-top: 36px;
+  }
+
   .book-award {
     background: #fff;
     color: $dark;
@@ -58,12 +62,12 @@
 }
 
 @media (min-width: 1024px) {
-  .homepage-book {
-    flex-direction: row;
-
-    h2 {
+    .books-headline {
       margin-left: 64px;
     }
+
+    .homepage-book {
+    flex-direction: row;
 
     .book-container-left {
       width: 50%;

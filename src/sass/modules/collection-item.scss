@@ -20,6 +20,9 @@
         grid-template-columns: 1fr 1fr 1fr;
         align-items: end;
         column-gap: 24px;
+
+        img {max-width: 264px;}
+
         .book-title {
           width: 80%;
           margin: 0 auto 24px;

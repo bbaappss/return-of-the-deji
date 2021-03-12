@@ -1093,6 +1093,8 @@ body.modal-open {
       grid-template-columns: 1fr 1fr 1fr;
       align-items: end;
       column-gap: 24px; }
+      .collections .collection-item-grid img {
+        max-width: 264px; }
       .collections .collection-item-grid .book-title {
         width: 80%;
         margin: 0 auto 24px; } }
@@ -1273,7 +1275,7 @@ footer.footer {
 
 .book-title {
   text-transform: uppercase;
-  font-weight: 500;
+  font-weight: 800;
   text-align: center;
   letter-spacing: 3px;
   margin: 24px 0;

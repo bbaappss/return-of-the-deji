@@ -16,3 +16,22 @@
     color: $dark;
   }
 }
+
+  .available-from-container {
+    border: dashed 5px $green;
+    padding: 36px;
+
+    margin-top: 36px;
+    display: flex;
+    flex-direction: column;
+    .available-from {
+      font-size: 20px;
+    }
+    a {
+      font-weight: 600;
+      color: black;
+      display: block;
+      margin: 12px 0 0;
+      font-size: 18px;
+    }
+  }

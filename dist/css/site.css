@@ -904,6 +904,21 @@ p {
   .section.books h2 {
     color: #1c1c1c; }
 
+.available-from-container {
+  border: dashed 5px #4c5f57;
+  padding: 36px;
+  margin-top: 36px;
+  display: flex;
+  flex-direction: column; }
+  .available-from-container .available-from {
+    font-size: 20px; }
+  .available-from-container a {
+    font-weight: 600;
+    color: black;
+    display: block;
+    margin: 12px 0 0;
+    font-size: 18px; }
+
 @media (min-width: 1024px) {
   .not-home .burger-and-fries-container,
   html:not([data-scroll="0"]) .burger-and-fries-container {
@@ -1062,12 +1077,25 @@ body.modal-open {
     padding: 0 12vw; } }
 
 .collections {
-  margin-bottom: 36px; }
+  margin-bottom: 72px; }
   .collections h2 {
     margin-bottom: 0; }
   .collections p {
     font-size: 20px;
     margin-top: 12px; }
+  @media (min-width: 1024px) {
+    .collections h2, .collections p {
+      margin-left: 64px; }
+    .collections hr {
+      display: none; }
+    .collections .collection-item-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      align-items: end;
+      column-gap: 24px; }
+      .collections .collection-item-grid .book-title {
+        width: 80%;
+        margin: 0 auto 24px; } }
 
 a.collection-item {
   display: flex;

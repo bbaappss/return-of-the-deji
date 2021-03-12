@@ -617,7 +617,7 @@ $(window).on("load", function () {
   })
   
   $(".fries a").click(function() {
-    $(this).toggleClass("is-active");
+    $(".js-hamburger").toggleClass("is-active");
     $(".fries").toggleClass("show");
     $("body").toggleClass("modal-open");
     $("body").toggleClass("menu-open");
